@@ -1,0 +1,47 @@
+name: Refresh daily and weekly fortunes
+
+on:
+  schedule:
+    # 00:17 Asia/Seoul (15:17 UTC previous day); GitHub scheduled jobs may start later.
+    - cron: '17 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kkultip-dosa-fortune-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and rebuild
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          CHANGECLEAN_URL: ${{ vars.CHANGECLEAN_URL }}
+        run: |
+          python3 -m py_compile build.py fortune_extra.py
+          python3 build.py
+          test -f site/fortune/today/rat/index.html
+          test -f site/fortune/weekly/pig/index.html
+      - name: Commit new fortune pages if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh fortunes for KST date"
+            git push origin HEAD:main
+          else
+            echo "No changed pages"
+          fi
