@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
+from fortune_extra import fortune_detail
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "site"
@@ -150,14 +151,14 @@ def fortune(kind):
  themes=DAILY_THEMES if daily else WEEKLY_THEMES
  seed=TODAY.toordinal() if daily else WEEK_START.toordinal()
  order=(seed * 7+ (0 if daily else 4))%len(themes)
- buttons=''.join(f'<a href="#{code}" class="zodiac-chip" data-zodiac="{code}"><span>{emoji}</span>{name}</a>' for code,name,emoji in ANIMALS)
+ buttons=''.join(f'<a href="/fortune/{kind}/{code}/" class="zodiac-chip" data-zodiac="{code}"><span>{emoji}</span>{name}</a>' for code,name,emoji in ANIMALS)
  posts=''
  for i,(code,name,emoji) in enumerate(ANIMALS):
   heading,copy=themes[(order+i*5)%len(themes)]
   extra=(f'{name}의 오늘 키워드는 <strong>{heading}</strong>이에요.' if daily else f'{name}의 이번 주 키워드는 <strong>{heading}</strong>이에요.')
-  posts+=f'<section id="{code}" class="zodiac-entry"><div class="zodiac-entry-head"><span class="zodiac-emoji">{emoji}</span><div><h2>{name}</h2><span>{esc(heading)}</span></div></div><p>{extra} {esc(copy)}</p></section>'
+  posts+=f'<a href="/fortune/{kind}/{code}/" class="zodiac-entry" style="display:block"><div class="zodiac-entry-head"><span class="zodiac-emoji">{emoji}</span><div><h2>{name}</h2><span>{esc(heading)}</span></div></div><p>{extra} {esc(copy)}</p><span class="read-link">출생연도별 상세 운세 보기 ↗</span></a>'
  desc=f'{sub}, 12띠별 {"오늘" if daily else "이번 주"} 운세를 가볍게 살펴보세요. 재미로 읽는 꿀팁도사의 운세 메시지.'
- body=f'''<div class="container fortune-page">{breadcrumb((('오늘의 운세' if daily else '주간운세'),None))}<div class="fortune-title"><span class="eyebrow">{ 'DAILY FORTUNE' if daily else 'WEEKLY FORTUNE'}</span><span class="fortune-glyph">✦</span><h1>{'오늘의 운세' if daily else '주간운세'}</h1><p>{esc(sub)}</p><div class="fortune-caption">{ '매일 새로운 메시지로 업데이트됩니다.' if daily else '월요일부터 일요일까지의 한 주를 살펴봅니다.' }<br>오늘의 메시지를 재미로 읽고, 일상의 선택은 스스로 만들어가세요.</div></div><div class="zodiac-pick"><h2>나의 띠를 선택해 보세요</h2><div class="zodiac-grid">{buttons}</div></div><div class="fortune-section-head"><h2>12띠별 운세 보기</h2><p>띠를 누르면 해당 운세로 이동해요.</p></div><div class="zodiac-post-grid">{posts}</div><div class="note-box fortune-disclaimer"><b>🔮 운세 콘텐츠 안내</b><p>본 운세는 재미로 읽는 오락용 창작 메시지입니다. 개인의 미래를 예측하거나 건강·금융·법률 판단에 사용하기 위한 자료가 아닙니다.</p></div><div class="fortune-bottom"><a href="/fortune/{'weekly' if daily else 'today'}/" class="btn btn-primary">{'이번 주 운세' if daily else '오늘의 운세'}도 보기 →</a></div></div>'''
+ body=f'''<div class="container fortune-page">{breadcrumb((('오늘의 운세' if daily else '주간운세'),None))}<div class="fortune-title"><span class="eyebrow">{ 'DAILY FORTUNE' if daily else 'WEEKLY FORTUNE'}</span><span class="fortune-glyph">✦</span><h1>{'오늘의 운세' if daily else '주간운세'}</h1><p>{esc(sub)}</p><div class="fortune-caption">{ '매일 새로운 메시지로 업데이트됩니다.' if daily else '월요일부터 일요일까지의 한 주를 살펴봅니다.' }<br>오늘의 메시지를 재미로 읽고, 일상의 선택은 스스로 만들어가세요.</div></div><div class="zodiac-pick"><h2>나의 띠를 선택해 보세요</h2><div class="zodiac-grid">{buttons}</div></div><div class="fortune-section-head"><h2>12띠별 운세 보기</h2><p>띠를 누르면 출생연도별 총운·재물운·애정운·건강운·직장운을 확인할 수 있어요.</p></div><div class="zodiac-post-grid">{posts}</div><div class="note-box fortune-disclaimer"><b>🔮 운세 콘텐츠 안내</b><p>본 운세는 재미로 읽는 오락용 창작 메시지입니다. 개인의 미래를 예측하거나 건강·금융·법률 판단에 사용하기 위한 자료가 아닙니다.</p></div><div class="fortune-bottom"><a href="/fortune/{'weekly' if daily else 'today'}/" class="btn btn-primary">{'이번 주 운세' if daily else '오늘의 운세'}도 보기 →</a></div></div>'''
  return shell(title,desc,body,'today' if daily else 'weekly',f'fortune/{kind}/')
 
 def plain(title,content,active=''):
@@ -209,6 +210,9 @@ def build():
  for item in LIFE:write(f'life/{item["slug"]}/index.html',article(item,'life'))
  write('fortune/today/index.html',fortune('today'))
  write('fortune/weekly/index.html',fortune('weekly'))
+ for kind in ('today','weekly'):
+  for code,_,_ in ANIMALS:
+   write(f'fortune/{kind}/{code}/index.html',fortune_detail(kind,code,globals()))
  about='''<p><strong>꿀팁도사</strong>는 꿈해몽, 운세, 부동산·이사정보, 집 관리처럼 일상에서 궁금해지는 내용을 한자리에서 정리하는 정보 매거진입니다.</p><h2>콘텐츠 운영 원칙</h2><ul><li>꿈해몽과 운세는 재미로 보는 창작·문화 콘텐츠이며 실제 미래를 보장하거나 예측하지 않습니다.</li><li>부동산·이사 등 사실 확인이 필요한 주제는 가능한 한 공식 자료를 함께 안내합니다.</li><li>글의 오류가 발견되면 수정하며, 광고와 제휴 관계는 구분해 표시합니다.</li></ul><h2>운영 주체</h2><p>꿀팁도사 콘텐츠팀 · 독립 정보사이트 (정식 운영자 정보는 사이트 공개 전 확인·기입 예정)</p>'''
  write('about/index.html',plain('사이트 소개',about))
  privacy='''<p><strong>개인정보처리방침 초안</strong>입니다. 공개 전 실제 운영자·연락처·광고 서비스·데이터 보유 정책에 맞게 반드시 검토하고 확정해야 합니다.</p><h2>1. 수집 항목</h2><p>사이트 문의 양식을 사용하는 경우 이름, 회신용 이메일, 문의 내용이 수집될 수 있습니다.</p><h2>2. 이용 목적 및 보유기간</h2><p>문의 응대 및 필요한 후속 안내에 이용합니다. 실제 보유기간과 파기 방식은 운영 정책을 확정한 후 안내합니다.</p><h2>3. 광고 및 쿠키</h2><p>현재 제공하는 샘플에는 광고 추적 코드가 포함돼 있지 않습니다. 추후 구글 애드센스 등 외부 광고를 도입하면 쿠키와 유사 기술이 사용될 수 있으며, 적용 서비스의 처리 방침과 필요한 동의 절차를 이 페이지에 반영합니다.</p><h2>4. 문의</h2><p><a href="/contact/">문의 페이지</a>를 이용해 주세요. 정식 공개 전 운영자 정보 및 책임자 연락처를 추가해야 합니다.</p>'''
@@ -222,7 +226,7 @@ def build():
  write('404.html',shell('페이지를 찾을 수 없어요','요청한 페이지가 존재하지 않습니다.','<div class="container simple-page"><div class="page-heading"><h1>길을 잃으셨나요? ✦</h1><p>찾으시는 페이지가 없어요. 홈에서 다시 시작해보세요.</p><a class="btn btn-primary" href="/">꿀팁도사 홈으로 →</a></div></div>'))
  lines=['User-agent: *','Allow: /']
  if SITE_URL:
-  paths=['','dreams/','life/','life/real-estate/','life/moving/','life/cleaning/','fortune/today/','fortune/weekly/','about/','contact/'] + [f'dreams/{x["slug"]}/' for x in DREAMS] + [f'life/{x["slug"]}/' for x in LIFE]
+  paths=['','dreams/','life/','life/real-estate/','life/moving/','life/cleaning/','fortune/today/','fortune/weekly/','about/','contact/'] + [f'dreams/{x["slug"]}/' for x in DREAMS] + [f'life/{x["slug"]}/' for x in LIFE] + [f'fortune/{kind}/{code}/' for kind in ('today','weekly') for code,_,_ in ANIMALS]
   xml=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
   for p in paths:
    url=page_url(p)
