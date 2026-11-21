@@ -1,0 +1,62 @@
+{
+  "category": "신비·상징 꿈",
+  "emoji": "🔮",
+  "entries": [
+    {
+      "slug": "dragon-sky",
+      "subject": "하늘을 나는 용을 보는 꿈",
+      "scene_a": "용이 멀리 날아갔을 때",
+      "scene_b": "용이 가까이 내려왔을 때",
+      "reflection": "크고 특별한 성취를 향한 기대가 있는지"
+    },
+    {
+      "slug": "ghost-appearing",
+      "subject": "귀신이 나오는 꿈",
+      "scene_a": "귀신과 차분히 마주했을 때",
+      "scene_b": "무서워 도망쳤을 때",
+      "reflection": "막연한 두려움이나 정리되지 않은 기억이 있는지"
+    },
+    {
+      "slug": "zombie-chasing",
+      "subject": "좀비에게 쫓기는 꿈",
+      "scene_a": "안전한 곳에 숨었을 때",
+      "scene_b": "주변이 좀비로 가득했을 때",
+      "reflection": "반복되는 압박이나 최근 본 영화의 장면이 영향을 줬는지"
+    },
+    {
+      "slug": "fairy-meeting",
+      "subject": "요정을 만나는 꿈",
+      "scene_a": "이야기를 나누었을 때",
+      "scene_b": "요정이 갑자기 사라졌을 때",
+      "reflection": "상상력과 뜻밖의 도움에 대한 기대가 있는지"
+    },
+    {
+      "slug": "angel-wings",
+      "subject": "천사를 보는 꿈",
+      "scene_a": "평온하게 느껴졌을 때",
+      "scene_b": "천사가 멀어졌을 때",
+      "reflection": "위로와 보호를 바라는 마음이 있는지"
+    },
+    {
+      "slug": "devil-whisper",
+      "subject": "악마가 속삭이는 꿈",
+      "scene_a": "유혹을 거절했을 때",
+      "scene_b": "말에 흔들렸을 때",
+      "reflection": "선택의 갈등을 선악의 이미지로 표현하고 있는지"
+    },
+    {
+      "slug": "portal-opening",
+      "subject": "차원의 문이 열리는 꿈",
+      "scene_a": "문 너머를 탐험했을 때",
+      "scene_b": "돌아오는 길을 잃었을 때",
+      "reflection": "새로운 가능성을 탐험하고 싶지만 변화가 부담되는지"
+    },
+    {
+      "slug": "ufo-sighting",
+      "subject": "UFO를 목격하는 꿈",
+      "scene_a": "호기심으로 바라봤을 때",
+      "scene_b": "정체를 몰라 두려웠을 때",
+      "reflection": "설명하기 어려운 변화나 낯선 정보를 마주하고 있는지"
+    }
+  ]
+}
