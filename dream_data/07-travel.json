@@ -1,0 +1,202 @@
+{
+  "category": "이동·여행·교통 꿈",
+  "emoji": "🚗",
+  "entries": [
+    {
+      "slug": "car-driving",
+      "subject": "자동차를 운전하는 꿈",
+      "scene_a": "도로를 안정적으로 달렸을 때",
+      "scene_b": "방향을 잃고 헤맸을 때",
+      "reflection": "생활과 일의 방향을 직접 결정하는 느낌이 드는지"
+    },
+    {
+      "slug": "car-accident",
+      "subject": "교통사고가 나는 꿈",
+      "scene_a": "큰 피해 없이 멈췄을 때",
+      "scene_b": "상황을 통제하지 못했을 때",
+      "reflection": "예상치 못한 변수나 실수에 대한 걱정이 있는지"
+    },
+    {
+      "slug": "car-no-brakes",
+      "subject": "자동차 브레이크가 안 듣는 꿈",
+      "scene_a": "속도를 줄일 방법을 찾았을 때",
+      "scene_b": "차가 계속 빨라졌을 때",
+      "reflection": "일정이나 책임이 감당할 수 없을 만큼 빠르게 늘어나는지"
+    },
+    {
+      "slug": "car-reversing",
+      "subject": "자동차를 후진하는 꿈",
+      "scene_a": "차분히 주차를 마쳤을 때",
+      "scene_b": "뒤가 보이지 않았을 때",
+      "reflection": "이미 내린 결정을 다시 살펴봐야 한다고 느끼는지"
+    },
+    {
+      "slug": "taxi-missing",
+      "subject": "택시를 놓치는 꿈",
+      "scene_a": "다른 택시를 잡았을 때",
+      "scene_b": "계속 기다려도 오지 않았을 때",
+      "reflection": "외부 도움이나 기회를 제때 얻지 못할까 걱정하는지"
+    },
+    {
+      "slug": "taxi-stranger",
+      "subject": "모르는 사람과 택시를 타는 꿈",
+      "scene_a": "편안하게 이동했을 때",
+      "scene_b": "목적지가 달라졌을 때",
+      "reflection": "공동의 선택에서 주도권을 얼마나 갖고 있는지"
+    },
+    {
+      "slug": "bus-missing",
+      "subject": "버스를 놓치는 꿈",
+      "scene_a": "다음 버스를 기다렸을 때",
+      "scene_b": "막차까지 놓쳤을 때",
+      "reflection": "정해진 일정과 뒤처질까 하는 불안이 있는지"
+    },
+    {
+      "slug": "bus-wrong-way",
+      "subject": "버스를 잘못 타는 꿈",
+      "scene_a": "중간에 알아채고 내렸을 때",
+      "scene_b": "낯선 곳까지 갔을 때",
+      "reflection": "집단의 흐름을 따라가다 내 목표를 잊은 것은 아닌지"
+    },
+    {
+      "slug": "train-boarding",
+      "subject": "기차를 타는 꿈",
+      "scene_a": "창밖 풍경을 즐겼을 때",
+      "scene_b": "어디로 가는지 몰랐을 때",
+      "reflection": "장기 계획의 진행과 방향을 점검하고 싶은지"
+    },
+    {
+      "slug": "train-missing",
+      "subject": "기차를 놓치는 꿈",
+      "scene_a": "시간표를 다시 확인했을 때",
+      "scene_b": "승강장에서 기차만 바라봤을 때",
+      "reflection": "큰 기회를 준비하는 데 시간이 부족하다고 느끼는지"
+    },
+    {
+      "slug": "subway-lost",
+      "subject": "지하철에서 길을 잃는 꿈",
+      "scene_a": "환승역을 찾았을 때",
+      "scene_b": "출구가 계속 바뀌었을 때",
+      "reflection": "익숙한 절차조차 복잡하게 느껴지는 일이 있는지"
+    },
+    {
+      "slug": "plane-boarding",
+      "subject": "비행기에 탑승하는 꿈",
+      "scene_a": "좌석을 찾아 앉았을 때",
+      "scene_b": "탑승권이 없어 당황했을 때",
+      "reflection": "멀리 떠나고 싶은 마음과 준비에 대한 걱정이 있는지"
+    },
+    {
+      "slug": "plane-turbulence",
+      "subject": "비행기가 흔들리는 꿈",
+      "scene_a": "난기류를 지나 안정됐을 때",
+      "scene_b": "흔들림이 심해 무서웠을 때",
+      "reflection": "큰 목표로 가는 과정의 불확실성을 받아들이는지"
+    },
+    {
+      "slug": "plane-crash",
+      "subject": "비행기 추락을 보는 꿈",
+      "scene_a": "멀리서 상황을 지켜봤을 때",
+      "scene_b": "추락 현장에 가까이 있었을 때",
+      "reflection": "거창한 계획이 실패할까 두려운 마음이 있는지"
+    },
+    {
+      "slug": "helicopter-flying",
+      "subject": "헬리콥터를 타는 꿈",
+      "scene_a": "높은 곳에서 풍경을 봤을 때",
+      "scene_b": "착륙할 곳이 보이지 않았을 때",
+      "reflection": "문제를 멀리서 조망하고 싶지만 현실로 돌아오기 어려운지"
+    },
+    {
+      "slug": "ship-sailing",
+      "subject": "배를 타고 바다를 건너는 꿈",
+      "scene_a": "잔잔한 물길을 따라갔을 때",
+      "scene_b": "항구가 보이지 않았을 때",
+      "reflection": "오랜 시간이 걸리는 변화에 몸을 맡기고 있는지"
+    },
+    {
+      "slug": "boat-sinking",
+      "subject": "배가 가라앉는 꿈",
+      "scene_a": "구명조끼를 찾았을 때",
+      "scene_b": "물이 계속 들어왔을 때",
+      "reflection": "함께 진행하는 일의 기반이 흔들리는지"
+    },
+    {
+      "slug": "boat-rowing",
+      "subject": "노를 저어 배를 움직이는 꿈",
+      "scene_a": "리듬을 맞춰 나아갔을 때",
+      "scene_b": "노가 물에 빠졌을 때",
+      "reflection": "작은 노력으로 방향을 잡는 일이 중요한지"
+    },
+    {
+      "slug": "bicycle-riding",
+      "subject": "자전거를 타는 꿈",
+      "scene_a": "균형을 잘 잡았을 때",
+      "scene_b": "넘어질까 불안했을 때",
+      "reflection": "자기 속도와 일상 균형을 찾고 싶은지"
+    },
+    {
+      "slug": "motorcycle-speed",
+      "subject": "오토바이를 빠르게 타는 꿈",
+      "scene_a": "바람을 즐겼을 때",
+      "scene_b": "속도를 줄일 수 없었을 때",
+      "reflection": "즉흥적인 선택의 자유와 위험을 동시에 느끼는지"
+    },
+    {
+      "slug": "walking-unknown-road",
+      "subject": "낯선 길을 걷는 꿈",
+      "scene_a": "새로운 풍경이 반가웠을 때",
+      "scene_b": "길 안내가 없어 불안했을 때",
+      "reflection": "익숙한 방식 밖으로 나가는 일을 생각하는지"
+    },
+    {
+      "slug": "highway-traffic",
+      "subject": "고속도로에서 막히는 꿈",
+      "scene_a": "우회로를 찾아냈을 때",
+      "scene_b": "차가 전혀 움직이지 않았을 때",
+      "reflection": "함께 움직이는 조직의 지연에 답답함을 느끼는지"
+    },
+    {
+      "slug": "passport-losing",
+      "subject": "여권을 잃어버리는 꿈",
+      "scene_a": "다시 찾아 출발했을 때",
+      "scene_b": "공항에서 발이 묶였을 때",
+      "reflection": "자격이나 준비 서류가 부족할까 걱정하는지"
+    },
+    {
+      "slug": "luggage-lost",
+      "subject": "여행 가방을 잃어버리는 꿈",
+      "scene_a": "분실물을 찾았을 때",
+      "scene_b": "필수품이 없어 당황했을 때",
+      "reflection": "새로운 환경에 필요한 준비를 놓친 것 같다고 느끼는지"
+    },
+    {
+      "slug": "packing-travel",
+      "subject": "여행 짐을 싸는 꿈",
+      "scene_a": "필요한 것을 챙겼을 때",
+      "scene_b": "짐이 끝없이 늘어났을 때",
+      "reflection": "새로운 계획을 앞두고 준비와 정리에 시간을 쓰는지"
+    },
+    {
+      "slug": "abroad-travel",
+      "subject": "해외여행을 떠나는 꿈",
+      "scene_a": "낯선 거리를 즐겼을 때",
+      "scene_b": "언어가 통하지 않았을 때",
+      "reflection": "새로운 기회에 대한 호기심과 적응 부담이 있는지"
+    },
+    {
+      "slug": "camping-nature",
+      "subject": "캠핑을 하는 꿈",
+      "scene_a": "편안히 쉬었을 때",
+      "scene_b": "텐트가 무너졌을 때",
+      "reflection": "일상에서 벗어나고 싶지만 안전도 챙기고 싶은지"
+    },
+    {
+      "slug": "skiing-slope",
+      "subject": "스키를 타고 내려오는 꿈",
+      "scene_a": "균형을 잡고 활강했을 때",
+      "scene_b": "멈추지 못하고 미끄러졌을 때",
+      "reflection": "새로운 도전에서 속도와 통제의 균형을 고민하는지"
+    }
+  ]
+}
