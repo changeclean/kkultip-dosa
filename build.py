@@ -107,12 +107,8 @@ def promo_ads():
  ]
  cards=[]
  for title,img,url,alt,fallback in items:
-  is_clean = title == '체인지클린'
-  mobile_tag = '입주 · 이사 · 거주청소' if is_clean else '도시가스 · 배관 · 시공'
-  mobile_caption = '청소 상담과 견적 문의' if is_clean else '도시가스 공사 상담 문의'
-  mobile_symbol = '🧹' if is_clean else '🔧'
-  banner_type = 'promo-clean' if is_clean else 'promo-energy'
-  cards.append(f'''<a class="promo-banner-link {banner_type}" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><img class="promo-banner-desktop" src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentElement.querySelector('.promo-banner-fallback').hidden=false"><span class="promo-banner-mobile"><span class="promo-mobile-top"><span class="promo-mobile-eyebrow">제휴 서비스 안내</span><span class="promo-mobile-symbol" aria-hidden="true">{mobile_symbol}</span></span><strong class="promo-mobile-title">{esc(title)}</strong><span class="promo-mobile-services">{esc(mobile_tag)}</span><span class="promo-mobile-bottom"><span>{esc(mobile_caption)}</span><b>상담하기 ↗</b></span></span><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
+  mobile_img = '/assets/ad-change-clean-mobile.png' if title == '체인지클린' else '/assets/ad-rich-energy-mobile.png'
+  cards.append(f'''<a class="promo-banner-link" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><picture><source media="(max-width: 650px)" srcset="{mobile_img}" type="image/png"><img src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.closest('.promo-banner-link').querySelector('.promo-banner-fallback').hidden=false"></picture><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
  return '<section class="promo-ads" aria-label="제휴 서비스 광고"><div class="container"><div class="promo-ads-label">ADVERTISEMENT · 제휴 서비스 안내</div><div class="promo-ads-stack">'+''.join(cards)+'</div></div></section>'
 
 def breadcrumb(*parts):
@@ -206,52 +202,35 @@ CSS = r'''@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400
 @media(max-width:650px){.promo-ads{padding:16px 0 24px}.promo-ads-stack{gap:10px}.promo-banner-link{border-radius:9px}.promo-banner-fallback{font-size:14px;min-height:68px;padding:18px 15px}}
 @media(prefers-reduced-motion:reduce){.promo-banner-link{transition:none}}
 
-/* True mobile ad artwork: never shrink the desktop-wide text into unreadability. */
-.promo-banner-mobile{display:none}
+/* Mobile ad artwork: actual source image, no background-cropping or scale-to-fill. */
+.promo-banner-link picture{display:block;width:100%}
+.promo-banner-link picture img{width:100%;height:auto;max-width:100%;display:block;aspect-ratio:auto;object-fit:contain;object-position:center}
 @media(max-width:650px){
-  .promo-ads{padding:22px 0 30px}
-  .promo-ads-label{font-size:11px;margin-bottom:12px}
-  .promo-ads-stack{gap:16px}
-  .promo-banner-link{border-radius:17px;border:1px solid #d5e3f5;box-shadow:0 9px 25px rgba(28,60,101,.08);background:#e7f3ff}
-  .promo-banner-desktop{display:none!important}
-  .promo-banner-mobile{display:flex;flex-direction:column;box-sizing:border-box;min-height:220px;gap:0;padding:18px 19px 19px;overflow:hidden;position:relative;background:linear-gradient(123deg,#dbeeff 0%,#e9f4ff 54%,#f8fbff 100%);color:#163f77;isolation:isolate}
-  .promo-banner-mobile:before{content:'';position:absolute;width:180px;height:180px;right:-62px;top:-85px;background:#7cbaf870;border-radius:50%;z-index:-1}
-  .promo-mobile-top{display:flex;justify-content:space-between;align-items:start;min-height:45px;gap:10px}
-  .promo-mobile-eyebrow{display:inline-flex;font-size:11px;font-weight:800;color:#285784;background:#ffffff9e;padding:4px 9px;border-radius:20px}
-  .promo-mobile-symbol{font-size:31px;line-height:1.1}
-  .promo-mobile-title{font-size:clamp(26px,7.5vw,35px);font-weight:900;letter-spacing:-.06em;line-height:1.25;margin:2px 0 8px}
-  .promo-mobile-services{font-size:clamp(12px,3.5vw,15px);font-weight:700;color:#365b80;line-height:1.55;word-break:keep-all}
-  .promo-mobile-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:18px;font-size:12px;font-weight:700;color:#446b94}
-  .promo-mobile-bottom b{flex:none;display:inline-block;font-size:14px;font-weight:900;background:#075eb4;color:#fff;border-radius:10px;padding:10px 14px}
-  .promo-energy{border-color:#efcfab;background:#fff3e6}
-  .promo-energy .promo-banner-mobile{background:linear-gradient(124deg,#ffe8cd 0%,#fff0da 55%,#fffaf4 100%);color:#833b09}
-  .promo-energy .promo-banner-mobile:before{background:#ffb55d77}
-  .promo-energy .promo-mobile-eyebrow{color:#98510f}
-  .promo-energy .promo-mobile-services,.promo-energy .promo-mobile-bottom{color:#986231}
-  .promo-energy .promo-mobile-bottom b{background:#a84908}
-  .promo-banner-link:focus-visible{outline:3px solid #855a19;outline-offset:3px}
-  .promo-banner-fallback{font-size:14px;min-height:70px;padding:17px}
+ .promo-ads{padding:18px 0 28px}
+ .promo-ads-label{font-size:11px;margin-bottom:10px}
+ .promo-ads-stack{gap:18px}
+ .promo-banner-link{border-radius:14px;background:#fff;overflow:hidden;border:1px solid #e7e6e5;box-shadow:0 7px 20px #27243216}
+ .promo-banner-link picture{display:block;width:100%;line-height:0}
+ .promo-banner-link picture img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:0}
+ .promo-banner-fallback{font-size:14px;min-height:70px;padding:17px}
 }
 @media(max-width:380px){
-  .container{padding-left:14px;padding-right:14px}
-  .header-inner{gap:6px}
-  .brand{font-size:18px}
-  .search-toggle{padding:7px 10px}
-  .primary-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;overflow:visible}
-  .primary-nav a{font-size:11px;white-space:normal;text-align:center;line-height:1.35;min-height:38px;display:flex;align-items:center;justify-content:center;padding:4px 0}
-  .hero h1{font-size:clamp(29px,9vw,37px)}
-  .hero-copy{padding-top:30px}
-  .hero-actions .btn{padding:10px 14px}
-  .topic-grid{gap:8px}
-  .topic-card{padding:14px;min-height:150px}
-  .article-card{flex-direction:column}
-  .article-visual{width:100%;height:120px}
-  .article-content{padding:17px}
-  .article-content h3{font-size:16px}
-  .article-content p{font-size:12px}
-  .promo-banner-mobile{padding:16px;min-height:220px}
-  .promo-mobile-bottom{flex-wrap:wrap}
-  .promo-mobile-bottom b{margin-left:auto}
+ .container{padding-left:14px;padding-right:14px}
+ .header-inner{gap:6px}
+ .brand{font-size:18px}
+ .search-toggle{padding:7px 10px}
+ .primary-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;overflow:visible}
+ .primary-nav a{font-size:11px;white-space:normal;text-align:center;line-height:1.35;min-height:38px;display:flex;align-items:center;justify-content:center;padding:4px 0}
+ .hero h1{font-size:clamp(29px,9vw,37px)}
+ .hero-copy{padding-top:30px}
+ .hero-actions .btn{padding:10px 14px}
+ .topic-grid{gap:8px}
+ .topic-card{padding:14px;min-height:150px}
+ .article-card{flex-direction:column}
+ .article-visual{width:100%;height:120px}
+ .article-content{padding:17px}
+ .article-content h3{font-size:16px}
+ .article-content p{font-size:12px}
 }
 
 /* 꿀팁도사 mascot brand identity — v3 */
