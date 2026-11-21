@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """꿈해몽 300개 생성기 검증: GitHub Actions / 로컬 공용."""
 import os
+import sys
 from pathlib import Path
 from xml.etree import ElementTree
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 os.environ.setdefault("SITE_URL", "https://kkultip-dosa.netlify.app")
 
