@@ -107,7 +107,8 @@ def promo_ads():
  ]
  cards=[]
  for title,img,url,alt,fallback in items:
-  cards.append(f'''<a class="promo-banner-link" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><img src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
+  mobile_desc = '입주·이사·거주청소 빠른 상담' if title == '체인지클린' else '도시가스 시공·설치 상담'
+  cards.append(f'''<a class="promo-banner-link" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><img src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentElement.querySelector('.promo-banner-fallback').hidden=false"><span class="promo-banner-mobile"><strong>{esc(title)}</strong><small>{esc(mobile_desc)}</small><b>홈페이지에서 상담하기 ↗</b></span><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
  return '<section class="promo-ads" aria-label="제휴 서비스 광고"><div class="container"><div class="promo-ads-label">ADVERTISEMENT · 제휴 서비스 안내</div><div class="promo-ads-stack">'+''.join(cards)+'</div></div></section>'
 
 def breadcrumb(*parts):
@@ -200,6 +201,41 @@ CSS = r'''@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400
 .promo-banner-fallback[hidden]{display:none}
 @media(max-width:650px){.promo-ads{padding:16px 0 24px}.promo-ads-stack{gap:10px}.promo-banner-link{border-radius:9px}.promo-banner-fallback{font-size:14px;min-height:68px;padding:18px 15px}}
 @media(prefers-reduced-motion:reduce){.promo-banner-link{transition:none}}
+
+/* Responsive: preserve the supplied artwork and add a readable mobile call-to-action */
+.promo-banner-mobile{display:none}
+@media(max-width:650px){
+  .promo-ads-stack{gap:16px}
+  .promo-banner-link{background:#fff;border-radius:15px}
+  .promo-banner-link img{aspect-ratio:auto;width:100%;height:auto;object-fit:contain}
+  .promo-banner-mobile{display:flex;flex-direction:column;gap:5px;padding:16px 17px 17px;background:linear-gradient(115deg,#edf5ff,#fff);color:#174b8a}
+  .promo-banner-mobile strong{font-size:21px;letter-spacing:-.045em;line-height:1.4}
+  .promo-banner-mobile small{font-size:13px;color:#4b617e;line-height:1.6}
+  .promo-banner-mobile b{align-self:flex-start;margin-top:6px;background:#1162ba;color:#fff;font-size:13px;padding:9px 15px;border-radius:9px;line-height:1.4}
+  .promo-banner-link:last-child .promo-banner-mobile{background:linear-gradient(115deg,#fff1e2,#fffaf4);color:#8e420b}
+  .promo-banner-link:last-child .promo-banner-mobile small{color:#795f4c}
+  .promo-banner-link:last-child .promo-banner-mobile b{background:#bb5c0a}
+  .promo-banner-link:focus-visible{outline:3px solid #8b5a13;outline-offset:3px}
+}
+@media(max-width:380px){
+  .container{padding-left:14px;padding-right:14px}
+  .header-inner{gap:6px}
+  .brand{font-size:18px}
+  .search-toggle{padding:7px 10px}
+  .primary-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;overflow:visible}
+  .primary-nav a{font-size:11px;white-space:normal;text-align:center;line-height:1.35;min-height:38px;display:flex;align-items:center;justify-content:center;padding:4px 0}
+  .hero h1{font-size:clamp(29px,9vw,37px)}
+  .hero-copy{padding-top:30px}
+  .hero-actions .btn{padding:10px 14px}
+  .topic-grid{gap:8px}
+  .topic-card{padding:14px;min-height:150px}
+  .article-card{flex-direction:column}
+  .article-visual{width:100%;height:120px}
+  .article-content{padding:17px}
+  .article-content h3{font-size:16px}
+  .article-content p{font-size:12px}
+  .promo-banner-mobile{padding:16px}
+}
 
 /* 꿀팁도사 mascot brand identity — v3 */
 .brand-avatar{width:48px;height:48px;border-radius:15px;object-fit:cover;flex:none;box-shadow:0 5px 16px #a967242a;border:2px solid #fff3d6;background:#fff6e7}
