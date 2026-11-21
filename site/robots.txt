@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kkultip-dosa.netlify.app/sitemap.xml
