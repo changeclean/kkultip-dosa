@@ -7,13 +7,14 @@ from pathlib import Path
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
 from fortune_extra import fortune_detail
+from dream_catalog import expand_dreams
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "site"
 TODAY = datetime.now(ZoneInfo('Asia/Seoul')).date()
 CONTENT_CREATED_DATE = '2026-10-29'
 WEEK_START = TODAY - timedelta(days=TODAY.weekday())
-SITE_URL = os.environ.get('SITE_URL','').strip().rstrip('/')
+SITE_URL = (os.environ.get('SITE_URL') or os.environ.get('URL') or '').strip().rstrip('/')
 CHANGECLEAN_URL = os.environ.get('CHANGECLEAN_URL','').strip()
 TITLE = '꿀팁도사'
 DESCRIPTION = '꿈해몽부터 오늘의 운세, 주간운세, 이사·부동산 생활정보까지 한곳에서 살펴보는 생활정보 매거진.'
@@ -28,6 +29,9 @@ DREAMS = [
   dict(slug='cleaning-dream', title='집 청소하는 꿈 해몽: 방·화장실·거실을 청소하는 꿈', category='집·이사 꿈', emoji='🧹', excerpt='집을 말끔히 청소하는 꿈은 정리하고 싶은 마음과 연결해 볼 수 있습니다.', intro='청소는 눈에 보이는 먼지를 치우는 행동이지만 꿈에서는 마음속의 복잡함을 정리하는 장면으로 받아들여지기도 합니다. 어느 공간을 청소했는지 떠올려 보세요.', sections=[('방을 깨끗하게 정리했다면','내 생활을 정돈하고 싶은 욕구나 작지만 분명한 성취감을 떠올릴 수 있습니다.'),('화장실을 계속 청소했다면','신경 쓰이는 문제를 해결하고 싶은 마음이 반복된 행동으로 나타났을 수 있습니다. 지저분했다는 사실만으로 불길하게 단정하지 마세요.'),('청소해도 먼지가 계속 나왔다면','끝나지 않는 숙제나 반복되는 일을 부담스럽게 느끼는 상태를 반영했을 가능성이 있습니다.')], tip='실제 집 정리가 필요하다면 작은 공간 하나부터 시작해보세요.'),
   dict(slug='family-dream', title='가족이 나오는 꿈 해몽: 부모님·형제·오래된 집', category='사람·가족 꿈', emoji='👨‍👩‍👧', excerpt='가족 꿈은 관계의 기억과 감정이 자연스럽게 나타난 장면일 수 있어요.', intro='가족이 나오는 꿈은 평소의 관계, 그리움, 걱정, 추억 같은 감정과 이어질 수 있습니다. 한 가지 꿈의 장면만으로 타인에게 생길 일을 예측할 수는 없습니다.', sections=[('부모님과 함께 식사했다면','익숙함과 안정을 느끼고 싶은 마음을 떠올려볼 수 있습니다. 최근 함께 보낸 시간이 영향을 미쳤을 수도 있습니다.'),('형제자매와 다퉜다면','현실의 갈등을 그대로 반영할 수도 있고, 단순히 긴장된 감정이 재구성된 장면일 수도 있습니다.'),('가족과 오래된 집을 방문했다면','어린 시절의 기억이나 그리움이 꿈속 공간에 나타난 경우로 생각할 수 있습니다.')], tip='걱정스러운 꿈이었다면 꿈을 근거로 결론 내리기보다 가까운 사람과 안부를 나눠보세요.'),
 ]
+
+# Keep the original eight essays; append editorially organized dream topics.
+DREAMS.extend(expand_dreams(DREAMS))
 
 LIFE = [
   dict(slug='moving-checklist', category='이사정보', emoji='📦', title='이사 준비 체크리스트: 4주 전부터 이사 당일까지', excerpt='예약·공과금·주소 변경·귀중품까지, 빠뜨리기 쉬운 이사 준비를 순서대로 정리했습니다.', intro='이사는 짐을 옮기는 하루보다 그 전후의 준비에서 차이가 납니다. 아래 체크리스트는 일반 가구를 위한 출발점이며, 아파트 입주 규정과 계약 조건에 따라 달라질 수 있습니다.', sections=[('이사 3~4주 전','이사 날짜를 정하고 이사업체 견적과 포함 서비스를 비교합니다. 엘리베이터 사용 예약, 사다리차 가능 여부, 주차 공간을 확인하세요. 버릴 물건은 미리 분류하면 포장량을 줄일 수 있습니다.'),('이사 1~2주 전','주소 변경이 필요한 금융·쇼핑·구독 서비스를 목록으로 만듭니다. 인터넷 이전 설치와 가전 설치 일정을 확인하고, 관리사무소에 입·퇴실 절차를 문의하세요.'),('이사 전날과 당일','신분증·계약서·열쇠·상비약·충전기처럼 바로 써야 할 물건은 따로 챙깁니다. 출발 전 계량기·집 상태를 사진으로 남기고, 도착 후에는 가전 작동과 파손 여부를 점검하세요.'),('이사 후','실제 전입한 날부터 정해진 기한 안에 전입신고 등 필요한 행정 절차를 챙깁니다. 필요한 경우 계약 관련 확정일자 절차도 확인하세요.')], sources=[('정부24 전입신고 안내','https://m.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000016&Mcode=10020')]),
@@ -139,10 +143,13 @@ def article(item,kind):
   if item.get('sources'):
    paragraph+='<div class="source-list"><b>관련 공식 사이트</b><ul>'+''.join(f'<li><a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{esc(t)} ↗</a></li>' for t,url in item['sources'])+'</ul></div>'
   paragraph+='<p class="disclaimer">생활정보는 일반적인 안내입니다. 실제 신청·계약·법적 판단은 상황에 따라 달라질 수 있으므로 관계 기관의 최신 안내를 확인하세요.</p>'
- related = [x for x in (DREAMS if isdream else LIFE) if x['slug'] != item['slug']][:3]
+ candidates = DREAMS if isdream else LIFE
+ related = [x for x in candidates if x['slug'] != item['slug'] and x['category'] == item['category']][:3]
+ if len(related) < 3:
+  related += [x for x in candidates if x['slug'] != item['slug'] and x not in related][:3-len(related)]
  side=''.join(f'<a href="/{kind}/{x["slug"]}/">{x["emoji"]} {esc(x["title"])}</a>' for x in related)
- body=f'''<div class="container article-page">{breadcrumb((label,f'/{kind}/'),(title,None))}<div class="article-layout"><article class="article-main"><header class="article-header"><span class="eyebrow">{esc(item['category'])}</span><h1>{esc(title)}</h1><p class="article-lead">{esc(item['excerpt'])}</p><div class="article-meta">꿀팁도사 콘텐츠팀 <span>·</span> {CONTENT_CREATED_DATE} 작성</div></header><div class="article-hero-visual {'visual-dream' if isdream else 'visual-life'}"><span>{item['emoji']}</span><span class="hero-visual-stars">✧ &nbsp; ✦ &nbsp; ✳</span></div><div class="article-body">{paragraph}</div>{adslot()}{brand_strip() if item['category'] in ('집·이사 꿈','이사정보','청소·관리') else ''}<div class="post-end"><a href="/{kind}/">← {label} 전체보기</a><button type="button" class="share-button" data-copy-link>주소 복사 ⧉</button></div></article><aside class="article-sidebar"><div class="sidebar-panel"><span class="eyebrow">MORE STORIES</span><h3>다른 글도 살펴볼까요?</h3>{side}</div><div class="sidebar-panel sidebar-note"><span>✦</span><p>생활 속 궁금증을<br>천천히 풀어보세요.</p></div></aside></div></div>'''
- return shell(title,item['excerpt'],body,kind if kind=='dreams' else 'life',f'{kind}/{item["slug"]}/','article')
+ body=f'''<div class="container article-page">{breadcrumb((label,f'/{kind}/'),(title,None))}<div class="article-layout"><article class="article-main"><header class="article-header"><span class="eyebrow">{esc(item['category'])}</span><h1>{esc(title)}</h1><p class="article-lead">{esc(item['excerpt'])}</p><div class="article-meta">꿀팁도사 콘텐츠팀 <span>·</span> {item.get('created_date',CONTENT_CREATED_DATE)} 작성</div></header><div class="article-hero-visual {'visual-dream' if isdream else 'visual-life'}"><span>{item['emoji']}</span><span class="hero-visual-stars">✧ &nbsp; ✦ &nbsp; ✳</span></div><div class="article-body">{paragraph}</div>{adslot()}{brand_strip() if item['category'] in ('집·이사 꿈','이사정보','청소·관리') else ''}<div class="post-end"><a href="/{kind}/">← {label} 전체보기</a><button type="button" class="share-button" data-copy-link>주소 복사 ⧉</button></div></article><aside class="article-sidebar"><div class="sidebar-panel"><span class="eyebrow">MORE STORIES</span><h3>다른 글도 살펴볼까요?</h3>{side}</div><div class="sidebar-panel sidebar-note"><span>✦</span><p>생활 속 궁금증을<br>천천히 풀어보세요.</p></div></aside></div></div>'''
+ return shell(title,item['excerpt'],body,kind if kind=='dreams' else 'life',f'{kind}/{item["slug"]}/','article',{'datePublished':item.get('created_date',CONTENT_CREATED_DATE),'dateModified':item.get('created_date',CONTENT_CREATED_DATE)})
 
 def fortune(kind):
  daily=kind=='today'; title='오늘의 운세' if daily else '주간운세'
@@ -226,11 +233,12 @@ def build():
  write('404.html',shell('페이지를 찾을 수 없어요','요청한 페이지가 존재하지 않습니다.','<div class="container simple-page"><div class="page-heading"><h1>길을 잃으셨나요? ✦</h1><p>찾으시는 페이지가 없어요. 홈에서 다시 시작해보세요.</p><a class="btn btn-primary" href="/">꿀팁도사 홈으로 →</a></div></div>'))
  lines=['User-agent: *','Allow: /']
  if SITE_URL:
+  article_dates={f'dreams/{x["slug"]}/':x.get('created_date',CONTENT_CREATED_DATE) for x in DREAMS}
   paths=['','dreams/','life/','life/real-estate/','life/moving/','life/cleaning/','fortune/today/','fortune/weekly/','about/','contact/'] + [f'dreams/{x["slug"]}/' for x in DREAMS] + [f'life/{x["slug"]}/' for x in LIFE] + [f'fortune/{kind}/{code}/' for kind in ('today','weekly') for code,_,_ in ANIMALS]
   xml=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
   for p in paths:
    url=page_url(p)
-   lastmod = TODAY.isoformat() if p.startswith('fortune/') or not p else CONTENT_CREATED_DATE
+   lastmod = TODAY.isoformat() if p.startswith('fortune/') or not p else article_dates.get(p,CONTENT_CREATED_DATE)
    xml.append(f'<url><loc>{esc(url)}</loc><lastmod>{lastmod}</lastmod></url>')
   xml.append('</urlset>')
   write('sitemap.xml','\n'.join(xml))
