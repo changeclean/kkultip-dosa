@@ -1,0 +1,174 @@
+{
+  "category": "직장·학교·시험 꿈",
+  "emoji": "📚",
+  "entries": [
+    {
+      "slug": "exam-failing",
+      "subject": "시험에 떨어지는 꿈",
+      "scene_a": "결과를 받아들였을 때",
+      "scene_b": "다시 시험을 볼 수 없었을 때",
+      "reflection": "실제 시험과 무관하게 평가에 대한 불안이 있는지"
+    },
+    {
+      "slug": "exam-perfect",
+      "subject": "시험에서 만점 받는 꿈",
+      "scene_a": "성적표를 확인했을 때",
+      "scene_b": "주변의 기대가 커졌을 때",
+      "reflection": "인정받고 싶은 마음과 완벽해야 한다는 부담이 있는지"
+    },
+    {
+      "slug": "exam-unprepared",
+      "subject": "시험 공부를 못 한 꿈",
+      "scene_a": "아는 문제부터 풀었을 때",
+      "scene_b": "답안을 전혀 쓰지 못했을 때",
+      "reflection": "준비가 부족하다고 느끼는 일을 앞둔 건 아닌지"
+    },
+    {
+      "slug": "school-late",
+      "subject": "학교에 지각하는 꿈",
+      "scene_a": "교실에 들어갔을 때",
+      "scene_b": "문이 닫혀 있었을 때",
+      "reflection": "정해진 기준과 시간에 맞춰야 한다는 압박이 있는지"
+    },
+    {
+      "slug": "homework-missing",
+      "subject": "숙제를 제출하지 못하는 꿈",
+      "scene_a": "마감 직전에 마쳤을 때",
+      "scene_b": "제출할 곳이 사라졌을 때",
+      "reflection": "해야 할 일을 오래 미뤄 마음에 걸리는지"
+    },
+    {
+      "slug": "graduation-ceremony",
+      "subject": "졸업식에 참석하는 꿈",
+      "scene_a": "축하받으며 웃었을 때",
+      "scene_b": "혼자 남아 허전했을 때",
+      "reflection": "한 단계의 끝과 새로운 시작을 동시에 느끼는지"
+    },
+    {
+      "slug": "interview-success",
+      "subject": "면접에서 합격하는 꿈",
+      "scene_a": "질문에 차분히 답했을 때",
+      "scene_b": "결과만 듣고 과정을 기억 못 했을 때",
+      "reflection": "새 기회 앞에서 자기 역량을 확인받고 싶은지"
+    },
+    {
+      "slug": "interview-failure",
+      "subject": "면접에서 떨어지는 꿈",
+      "scene_a": "다음 기회를 준비했을 때",
+      "scene_b": "말을 못 해 후회했을 때",
+      "reflection": "평가받을 때 평소보다 자신감이 흔들리는지"
+    },
+    {
+      "slug": "work-late",
+      "subject": "회사에 지각하는 꿈",
+      "scene_a": "사정을 설명하고 들어갔을 때",
+      "scene_b": "중요한 회의를 놓쳤을 때",
+      "reflection": "약속이나 책임을 놓칠까 걱정되는지"
+    },
+    {
+      "slug": "job-resigning",
+      "subject": "퇴사하는 꿈",
+      "scene_a": "후련하게 회사를 나왔을 때",
+      "scene_b": "앞으로의 일이 막막했을 때",
+      "reflection": "일의 방식이나 생활 리듬을 바꾸고 싶은지"
+    },
+    {
+      "slug": "job-fired",
+      "subject": "회사에서 해고되는 꿈",
+      "scene_a": "이유를 듣고 대응했을 때",
+      "scene_b": "아무 설명 없이 떠나야 했을 때",
+      "reflection": "직장 안정과 자기 가치에 대한 불안이 있는지"
+    },
+    {
+      "slug": "job-promoted",
+      "subject": "승진하는 꿈",
+      "scene_a": "동료의 축하를 받았을 때",
+      "scene_b": "역할이 너무 커져 부담됐을 때",
+      "reflection": "성과를 인정받고 싶은 마음이 책임과 함께 오는지"
+    },
+    {
+      "slug": "meeting-speaking",
+      "subject": "회의에서 발표하는 꿈",
+      "scene_a": "생각을 잘 전달했을 때",
+      "scene_b": "아무도 듣지 않았을 때",
+      "reflection": "의견을 표현할 자리가 부족하다고 느끼는지"
+    },
+    {
+      "slug": "presentation-fail",
+      "subject": "발표 중 실수하는 꿈",
+      "scene_a": "웃으며 바로잡았을 때",
+      "scene_b": "자료가 사라져 멈췄을 때",
+      "reflection": "사람들 앞에서 실수를 크게 걱정하는지"
+    },
+    {
+      "slug": "email-wrong",
+      "subject": "이메일을 잘못 보내는 꿈",
+      "scene_a": "즉시 정정했을 때",
+      "scene_b": "회수할 수 없었을 때",
+      "reflection": "한번 전달한 말이나 메시지가 오해받을까 걱정하는지"
+    },
+    {
+      "slug": "computer-work-crash",
+      "subject": "작업 파일이 사라지는 꿈",
+      "scene_a": "백업을 찾아 복구했을 때",
+      "scene_b": "몇 시간의 작업이 날아갔을 때",
+      "reflection": "노력이 사라질까 두렵거나 준비의 중요성을 느끼는지"
+    },
+    {
+      "slug": "business-opening",
+      "subject": "가게를 여는 꿈",
+      "scene_a": "첫 손님을 맞았을 때",
+      "scene_b": "손님이 오지 않았을 때",
+      "reflection": "새로운 일의 시작과 불확실한 결과를 생각하는지"
+    },
+    {
+      "slug": "store-busy",
+      "subject": "가게에 손님이 몰리는 꿈",
+      "scene_a": "차례대로 응대했을 때",
+      "scene_b": "손이 모자라 당황했을 때",
+      "reflection": "성과가 커져도 감당할 준비가 필요한지"
+    },
+    {
+      "slug": "store-empty",
+      "subject": "가게에 손님이 없는 꿈",
+      "scene_a": "조용히 정리하는 시간을 가졌을 때",
+      "scene_b": "하루 종일 아무도 오지 않았을 때",
+      "reflection": "노력이 주목받지 못한다는 답답함을 느끼는지"
+    },
+    {
+      "slug": "contract-signing",
+      "subject": "계약서에 서명하는 꿈",
+      "scene_a": "내용을 확인하고 서명했을 때",
+      "scene_b": "읽지도 못하고 서명했을 때",
+      "reflection": "오래 영향을 미칠 약속을 앞두고 있는지"
+    },
+    {
+      "slug": "contract-losing",
+      "subject": "계약서를 잃어버리는 꿈",
+      "scene_a": "사본을 찾아냈을 때",
+      "scene_b": "내용을 증명할 수 없었을 때",
+      "reflection": "약속과 증거를 지켜야 하는 상황이 있는지"
+    },
+    {
+      "slug": "office-moving",
+      "subject": "사무실을 옮기는 꿈",
+      "scene_a": "새 공간을 정돈했을 때",
+      "scene_b": "자리 배치가 혼란스러웠을 때",
+      "reflection": "업무환경이나 역할의 변화에 적응하고 있는지"
+    },
+    {
+      "slug": "teamwork-success",
+      "subject": "팀 프로젝트를 마치는 꿈",
+      "scene_a": "서로 축하했을 때",
+      "scene_b": "공로를 인정받지 못했을 때",
+      "reflection": "함께한 노력과 개인 기여를 어떻게 평가하는지"
+    },
+    {
+      "slug": "business-failure",
+      "subject": "사업이 실패하는 꿈",
+      "scene_a": "다시 계획을 세웠을 때",
+      "scene_b": "손실만 바라보고 있었을 때",
+      "reflection": "실패에 대한 걱정이 실제 도전 자체를 막는지"
+    }
+  ]
+}
