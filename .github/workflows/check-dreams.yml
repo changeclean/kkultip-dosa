@@ -4,6 +4,8 @@ on:
     paths:
       - 'build.py'
       - 'dream_catalog.py'
+      - 'fortune_extra.py'
+      - 'site/assets/**'
       - 'dream_data/**'
       - 'tests/**'
       - '.github/workflows/check-dreams.yml'
