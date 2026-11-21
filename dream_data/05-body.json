@@ -1,0 +1,202 @@
+{
+  "category": "신체·건강 꿈",
+  "emoji": "🫀",
+  "entries": [
+    {
+      "slug": "tooth-falling",
+      "subject": "이빨이 빠지는 꿈",
+      "scene_a": "빠진 이를 손에 쥐었을 때",
+      "scene_b": "여러 개가 한꺼번에 빠졌을 때",
+      "reflection": "외모나 건강에 대한 걱정 혹은 통제감 저하가 있는지"
+    },
+    {
+      "slug": "tooth-breaking",
+      "subject": "이가 부러지는 꿈",
+      "scene_a": "깨진 부분을 확인했을 때",
+      "scene_b": "말하기도 어려웠을 때",
+      "reflection": "말이나 행동의 실수를 두려워하는지"
+    },
+    {
+      "slug": "tooth-brushing",
+      "subject": "양치질하는 꿈",
+      "scene_a": "개운하게 마쳤을 때",
+      "scene_b": "아무리 닦아도 개운하지 않았을 때",
+      "reflection": "이미지를 정돈하거나 찜찜한 일을 해결하고 싶은지"
+    },
+    {
+      "slug": "hair-falling",
+      "subject": "머리카락이 빠지는 꿈",
+      "scene_a": "빠진 머리카락을 정리했을 때",
+      "scene_b": "한 움큼씩 빠졌을 때",
+      "reflection": "변화하는 외모나 피로에 신경 쓰고 있는지"
+    },
+    {
+      "slug": "hair-cutting",
+      "subject": "머리를 자르는 꿈",
+      "scene_a": "원하는 모양이 나왔을 때",
+      "scene_b": "너무 짧아 후회했을 때",
+      "reflection": "새 출발을 바라는 동시에 돌이킬 수 없는 선택이 걱정되는지"
+    },
+    {
+      "slug": "hair-dyeing",
+      "subject": "머리 염색하는 꿈",
+      "scene_a": "새 색이 마음에 들었을 때",
+      "scene_b": "색이 예상과 다르게 나왔을 때",
+      "reflection": "이미지를 바꾸고 싶지만 주변 반응이 신경 쓰이는지"
+    },
+    {
+      "slug": "bleeding-hand",
+      "subject": "손에서 피가 나는 꿈",
+      "scene_a": "상처를 살폈을 때",
+      "scene_b": "피가 멈추지 않았을 때",
+      "reflection": "해야 할 일이 많아 피로하거나 작은 손실을 걱정하는지"
+    },
+    {
+      "slug": "nosebleed",
+      "subject": "코피가 나는 꿈",
+      "scene_a": "휴지로 닦고 멈췄을 때",
+      "scene_b": "사람들 앞에서 당황했을 때",
+      "reflection": "무리한 일정이나 체력에 대한 생각이 있는지"
+    },
+    {
+      "slug": "broken-arm",
+      "subject": "팔이 다치는 꿈",
+      "scene_a": "보호받으며 쉬었을 때",
+      "scene_b": "손을 쓸 수 없었을 때",
+      "reflection": "평소 하던 일을 혼자 감당하기 어렵다고 느끼는지"
+    },
+    {
+      "slug": "broken-leg",
+      "subject": "다리가 다치는 꿈",
+      "scene_a": "도움을 받아 걸었을 때",
+      "scene_b": "앞으로 나갈 수 없었을 때",
+      "reflection": "진행 속도가 늦어지는 상황에 답답함을 느끼는지"
+    },
+    {
+      "slug": "running-barefoot",
+      "subject": "맨발로 뛰는 꿈",
+      "scene_a": "시원하게 달렸을 때",
+      "scene_b": "발이 아파 멈췄을 때",
+      "reflection": "자유로운 선택과 준비 부족 사이의 긴장이 있는지"
+    },
+    {
+      "slug": "hand-washing",
+      "subject": "손을 씻는 꿈",
+      "scene_a": "깨끗하게 씻겼을 때",
+      "scene_b": "얼룩이 남았을 때",
+      "reflection": "찜찜한 책임이나 실수를 정리하고 싶은지"
+    },
+    {
+      "slug": "face-mirror",
+      "subject": "거울에 얼굴이 비치는 꿈",
+      "scene_a": "익숙한 얼굴을 보았을 때",
+      "scene_b": "낯선 얼굴처럼 느껴졌을 때",
+      "reflection": "다른 사람에게 보이는 모습과 진짜 마음이 다른지"
+    },
+    {
+      "slug": "face-swelling",
+      "subject": "얼굴이 붓는 꿈",
+      "scene_a": "붓기가 가라앉았을 때",
+      "scene_b": "사람을 피하고 싶었을 때",
+      "reflection": "평가받는 상황에서 자신감을 잃거나 예민해졌는지"
+    },
+    {
+      "slug": "eyes-blurry",
+      "subject": "눈앞이 흐릿해지는 꿈",
+      "scene_a": "다시 또렷해졌을 때",
+      "scene_b": "앞을 볼 수 없었을 때",
+      "reflection": "불확실한 정보를 가지고 중요한 판단을 해야 하는지"
+    },
+    {
+      "slug": "glasses-broken",
+      "subject": "안경이 깨지는 꿈",
+      "scene_a": "새 안경을 찾았을 때",
+      "scene_b": "아무것도 선명하지 않았을 때",
+      "reflection": "익숙한 관점이 더는 맞지 않는다고 느끼는지"
+    },
+    {
+      "slug": "voice-missing",
+      "subject": "목소리가 나오지 않는 꿈",
+      "scene_a": "작게라도 말을 했을 때",
+      "scene_b": "소리쳐도 들리지 않았을 때",
+      "reflection": "의견을 전달할 기회가 부족하다고 느끼는지"
+    },
+    {
+      "slug": "singing-loudly",
+      "subject": "크게 노래하는 꿈",
+      "scene_a": "박수받으며 불렀을 때",
+      "scene_b": "가사를 잊어버렸을 때",
+      "reflection": "표현 욕구와 실수에 대한 불안이 함께 있는지"
+    },
+    {
+      "slug": "laughing-loudly",
+      "subject": "소리 내어 웃는 꿈",
+      "scene_a": "친구와 함께 웃었을 때",
+      "scene_b": "혼자 웃는 게 어색했을 때",
+      "reflection": "긴장을 풀고 싶은 감정이 쌓여 있는지"
+    },
+    {
+      "slug": "crying-hard",
+      "subject": "펑펑 우는 꿈",
+      "scene_a": "울고 나서 시원했을 때",
+      "scene_b": "아무도 알아주지 않았을 때",
+      "reflection": "참아 둔 감정이 표현될 기회를 찾는지"
+    },
+    {
+      "slug": "pregnancy-test",
+      "subject": "임신 테스트기를 보는 꿈",
+      "scene_a": "결과를 담담히 받아들였을 때",
+      "scene_b": "결과가 모호했을 때",
+      "reflection": "새로운 책임이나 시작을 앞두고 기대와 불안이 있는지"
+    },
+    {
+      "slug": "giving-birth",
+      "subject": "아기를 낳는 꿈",
+      "scene_a": "안도하며 아기를 안았을 때",
+      "scene_b": "준비가 없어 당황했을 때",
+      "reflection": "오래 준비한 일이 결실을 맺기를 기다리는지"
+    },
+    {
+      "slug": "fever-sick",
+      "subject": "열이 나는 꿈",
+      "scene_a": "휴식을 취했을 때",
+      "scene_b": "일을 멈출 수 없었을 때",
+      "reflection": "몸의 피로와 스트레스를 무시하며 지내는지"
+    },
+    {
+      "slug": "surgery-hospital",
+      "subject": "수술받는 꿈",
+      "scene_a": "무사히 회복했을 때",
+      "scene_b": "수술 전에 걱정이 커졌을 때",
+      "reflection": "크게 바뀌어야 할 문제를 해결하고 싶은지"
+    },
+    {
+      "slug": "healing-wound",
+      "subject": "상처가 낫는 꿈",
+      "scene_a": "흉터가 희미해졌을 때",
+      "scene_b": "다시 상처가 벌어졌을 때",
+      "reflection": "지난 갈등이 정리되는 과정에 있는지"
+    },
+    {
+      "slug": "tattoo-getting",
+      "subject": "문신을 새기는 꿈",
+      "scene_a": "마음에 드는 그림을 골랐을 때",
+      "scene_b": "지울 수 없어 후회했을 때",
+      "reflection": "오래 남는 선택이나 정체성 표현을 고민하는지"
+    },
+    {
+      "slug": "weight-gain",
+      "subject": "몸무게가 늘어나는 꿈",
+      "scene_a": "변화를 자연스럽게 받아들였을 때",
+      "scene_b": "옷이 맞지 않아 당황했을 때",
+      "reflection": "몸의 변화뿐 아니라 부담이 늘어난 상황이 있는지"
+    },
+    {
+      "slug": "weight-loss",
+      "subject": "몸무게가 줄어드는 꿈",
+      "scene_a": "가볍게 움직였을 때",
+      "scene_b": "기운이 없어 걱정됐을 때",
+      "reflection": "새롭게 시작하고 싶은 바람과 에너지 소모를 느끼는지"
+    }
+  ]
+}
