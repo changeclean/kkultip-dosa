@@ -1,0 +1,188 @@
+{
+  "category": "물건·일상 꿈",
+  "emoji": "🧳",
+  "entries": [
+    {
+      "slug": "phone-broken",
+      "subject": "휴대폰이 깨지는 꿈",
+      "scene_a": "수리할 수 있었을 때",
+      "scene_b": "연락이 끊겨버렸을 때",
+      "reflection": "소통 수단이나 중요한 정보를 잃을까 걱정하는지"
+    },
+    {
+      "slug": "phone-lost",
+      "subject": "휴대폰을 잃어버리는 꿈",
+      "scene_a": "다시 찾았을 때",
+      "scene_b": "연락할 방법이 없었을 때",
+      "reflection": "연결되어 있다는 안정감이 약해진 것은 아닌지"
+    },
+    {
+      "slug": "phone-calling",
+      "subject": "전화가 걸려오는 꿈",
+      "scene_a": "반갑게 전화를 받았을 때",
+      "scene_b": "상대가 아무 말이 없었을 때",
+      "reflection": "기다리는 답변이나 소식이 있는지"
+    },
+    {
+      "slug": "message-receiving",
+      "subject": "문자메시지를 받는 꿈",
+      "scene_a": "내용을 바로 이해했을 때",
+      "scene_b": "글자가 흐릿해 읽지 못했을 때",
+      "reflection": "중요한 의사소통에서 오해를 걱정하는지"
+    },
+    {
+      "slug": "watch-stopped",
+      "subject": "시계가 멈추는 꿈",
+      "scene_a": "시간을 다시 맞췄을 때",
+      "scene_b": "언제 멈췄는지 몰랐을 때",
+      "reflection": "마감이나 인생의 속도에 대해 생각이 많은지"
+    },
+    {
+      "slug": "watch-gift",
+      "subject": "손목시계를 선물 받는 꿈",
+      "scene_a": "마음에 들어 착용했을 때",
+      "scene_b": "시간이 맞지 않았을 때",
+      "reflection": "누군가와 맞춰야 하는 약속과 시간을 소중히 여기는지"
+    },
+    {
+      "slug": "new-clothes",
+      "subject": "새 옷을 입는 꿈",
+      "scene_a": "몸에 꼭 맞았을 때",
+      "scene_b": "거울을 보니 어색했을 때",
+      "reflection": "새로운 역할이나 이미지에 적응하는 중인지"
+    },
+    {
+      "slug": "clothes-torn",
+      "subject": "옷이 찢어지는 꿈",
+      "scene_a": "다른 옷으로 갈아입었을 때",
+      "scene_b": "사람들 앞에서 난처했을 때",
+      "reflection": "드러나고 싶지 않은 실수나 약점이 신경 쓰이는지"
+    },
+    {
+      "slug": "shoes-lost",
+      "subject": "신발을 잃어버리는 꿈",
+      "scene_a": "짝을 다시 찾았을 때",
+      "scene_b": "맨발로 걸어야 했을 때",
+      "reflection": "앞으로 나아갈 준비가 부족하다고 느끼는지"
+    },
+    {
+      "slug": "shoes-new",
+      "subject": "새 신발을 신는 꿈",
+      "scene_a": "편하게 걸을 수 있었을 때",
+      "scene_b": "발에 맞지 않았을 때",
+      "reflection": "새로운 방향이 자신에게 맞는지 시험하는 중인지"
+    },
+    {
+      "slug": "bag-heavy",
+      "subject": "무거운 가방을 메는 꿈",
+      "scene_a": "짐을 나눠 들었을 때",
+      "scene_b": "가방이 너무 무거웠을 때",
+      "reflection": "혼자 떠안은 책임을 줄일 필요가 있는지"
+    },
+    {
+      "slug": "bag-losing",
+      "subject": "가방을 잃어버리는 꿈",
+      "scene_a": "다시 돌려받았을 때",
+      "scene_b": "안에 있던 물건이 사라졌을 때",
+      "reflection": "개인적인 계획이나 중요한 것을 지키고 싶은지"
+    },
+    {
+      "slug": "key-finding",
+      "subject": "열쇠를 발견하는 꿈",
+      "scene_a": "맞는 문을 열었을 때",
+      "scene_b": "어디에 쓰는지 몰랐을 때",
+      "reflection": "문제를 해결할 단서가 가까이에 있는지"
+    },
+    {
+      "slug": "key-losing",
+      "subject": "열쇠를 잃어버리는 꿈",
+      "scene_a": "예비 열쇠를 찾았을 때",
+      "scene_b": "어디에도 들어갈 수 없었을 때",
+      "reflection": "통제권이나 접근 권한을 잃을까 걱정하는지"
+    },
+    {
+      "slug": "gift-opening",
+      "subject": "선물 상자를 여는 꿈",
+      "scene_a": "원하던 물건이 들어 있었을 때",
+      "scene_b": "내용이 예상과 달랐을 때",
+      "reflection": "기대했던 인정이나 관계의 호의를 생각하는지"
+    },
+    {
+      "slug": "mirror-breaking",
+      "subject": "거울이 깨지는 꿈",
+      "scene_a": "조각을 조심히 치웠을 때",
+      "scene_b": "비친 얼굴이 조각났을 때",
+      "reflection": "자기 이미지나 평가 기준이 흔들리는 경험이 있는지"
+    },
+    {
+      "slug": "camera-taking",
+      "subject": "사진을 찍는 꿈",
+      "scene_a": "순간을 잘 담았을 때",
+      "scene_b": "초점이 맞지 않았을 때",
+      "reflection": "놓치고 싶지 않은 경험이나 기록이 있는지"
+    },
+    {
+      "slug": "old-photo",
+      "subject": "오래된 사진을 보는 꿈",
+      "scene_a": "반가운 얼굴을 발견했을 때",
+      "scene_b": "사진 속 장소가 기억나지 않았을 때",
+      "reflection": "지나간 시절을 다시 해석하고 싶은 마음이 있는지"
+    },
+    {
+      "slug": "letter-receiving",
+      "subject": "편지를 받는 꿈",
+      "scene_a": "천천히 읽었을 때",
+      "scene_b": "봉투를 열지 못했을 때",
+      "reflection": "직접 듣지 못한 마음이나 소식을 기다리는지"
+    },
+    {
+      "slug": "important-document",
+      "subject": "중요한 서류를 찾는 꿈",
+      "scene_a": "서류를 정리해 찾았을 때",
+      "scene_b": "서류가 찢어졌을 때",
+      "reflection": "증명해야 할 일이나 마감에 대한 불안이 있는지"
+    },
+    {
+      "slug": "computer-error",
+      "subject": "컴퓨터가 고장 나는 꿈",
+      "scene_a": "재부팅해 해결했을 때",
+      "scene_b": "저장한 자료를 볼 수 없었을 때",
+      "reflection": "도구에 의존한 계획이 멈출까 걱정하는지"
+    },
+    {
+      "slug": "laptop-lost",
+      "subject": "노트북을 잃어버리는 꿈",
+      "scene_a": "가방에서 찾아냈을 때",
+      "scene_b": "업무 자료까지 없어진 듯했을 때",
+      "reflection": "개인 정보나 노력의 결과를 보호하고 싶은지"
+    },
+    {
+      "slug": "washingmachine-running",
+      "subject": "세탁기가 돌아가는 꿈",
+      "scene_a": "세탁을 깨끗이 마쳤을 때",
+      "scene_b": "물이 넘쳐 흘렀을 때",
+      "reflection": "반복되는 일상을 정리하고 싶지만 일이 늘어나는지"
+    },
+    {
+      "slug": "vacuum-cleaner",
+      "subject": "청소기를 돌리는 꿈",
+      "scene_a": "먼지를 말끔히 없앴을 때",
+      "scene_b": "청소기가 작동하지 않았을 때",
+      "reflection": "문제를 효율적으로 해결할 방법을 찾는지"
+    },
+    {
+      "slug": "refrigerator-empty",
+      "subject": "냉장고가 텅 비는 꿈",
+      "scene_a": "장 볼 목록을 만들었을 때",
+      "scene_b": "무엇을 먹어야 할지 막막했을 때",
+      "reflection": "생활 자원이나 에너지가 부족하다고 느끼는지"
+    },
+    {
+      "slug": "lightbulb-on",
+      "subject": "전등이 켜지는 꿈",
+      "scene_a": "방이 환해졌을 때",
+      "scene_b": "불빛이 깜빡였을 때",
+      "reflection": "막혔던 생각에 해결의 실마리가 필요한지"
+    }
+  ]
+}
