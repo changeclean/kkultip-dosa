@@ -108,7 +108,8 @@ def promo_ads():
  cards=[]
  for title,img,url,alt,fallback in items:
   mobile_img = '/assets/ad-change-clean-mobile.png' if title == '체인지클린' else '/assets/ad-rich-energy-mobile.png'
-  cards.append(f'''<a class="promo-banner-link" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><picture><source media="(max-width: 650px)" srcset="{mobile_img}" type="image/png"><img src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.closest('.promo-banner-link').querySelector('.promo-banner-fallback').hidden=false"></picture><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
+  mobile_webp = mobile_img.replace('.png', '.webp')
+  cards.append(f'''<a class="promo-banner-link" href="{esc(url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{esc(title)} 홈페이지 새 창으로 열기"><picture><source media="(max-width: 650px)" srcset="{mobile_webp}" type="image/webp"><source media="(max-width: 650px)" srcset="{mobile_img}" type="image/png"><img src="{img}" width="1983" height="396" alt="{esc(alt)}" loading="lazy" decoding="async" onerror="this.hidden=true;this.closest('.promo-banner-link').querySelector('.promo-banner-fallback').hidden=false"></picture><span class="promo-banner-fallback" hidden>{esc(fallback)} ↗</span></a>''')
  return '<section class="promo-ads" aria-label="제휴 서비스 광고"><div class="container"><div class="promo-ads-label">ADVERTISEMENT · 제휴 서비스 안내</div><div class="promo-ads-stack">'+''.join(cards)+'</div></div></section>'
 
 def breadcrumb(*parts):
