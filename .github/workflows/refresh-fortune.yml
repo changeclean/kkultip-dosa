@@ -1,6 +1,14 @@
 name: Refresh daily and weekly fortunes
 
 on:
+  push:
+    paths:
+      - 'build.py'
+      - 'dream_catalog.py'
+      - 'fortune_extra.py'
+      - 'dream_data/**'
+      - 'site/assets/**'
+      - '.github/workflows/refresh-fortune.yml'
   schedule:
     # 00:17 Asia/Seoul (15:17 UTC previous day); GitHub scheduled jobs may start later.
     - cron: '17 15 * * *'
@@ -27,14 +35,14 @@ jobs:
           python-version: '3.12'
       - name: Validate and rebuild
         env:
-          SITE_URL: ${{ vars.SITE_URL }}
-          CHANGECLEAN_URL: ${{ vars.CHANGECLEAN_URL }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://kkultip-dosa.netlify.app' }}
+          CHANGECLEAN_URL: ${{ vars.CHANGECLEAN_URL || 'https://myhomecare.imweb.me/' }}
         run: |
           python3 -m py_compile build.py fortune_extra.py
           python3 build.py
           test -f site/fortune/today/rat/index.html
           test -f site/fortune/weekly/pig/index.html
-      - name: Commit new fortune pages if changed
+      - name: Commit rebuilt site files when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
