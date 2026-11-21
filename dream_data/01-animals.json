@@ -1,0 +1,216 @@
+{
+  "category": "동물·곤충 꿈",
+  "emoji": "🐾",
+  "entries": [
+    {
+      "slug": "cat-entering",
+      "subject": "고양이가 집에 들어오는 꿈",
+      "scene_a": "고양이가 스스로 다가왔을 때",
+      "scene_b": "고양이가 숨어버렸을 때",
+      "reflection": "낯선 방문이나 새로운 관계에 대한 기대와 경계가 함께 있었는지"
+    },
+    {
+      "slug": "cat-biting",
+      "subject": "고양이에게 물리는 꿈",
+      "scene_a": "가볍게 장난치듯 물었을 때",
+      "scene_b": "아프게 물고 놓지 않았을 때",
+      "reflection": "가까운 관계의 작은 불편이나 경계선이 신경 쓰였는지"
+    },
+    {
+      "slug": "cat-kittens",
+      "subject": "새끼 고양이를 돌보는 꿈",
+      "scene_a": "새끼 고양이를 품에 안았을 때",
+      "scene_b": "돌보다 놓쳐버렸을 때",
+      "reflection": "새로 시작한 일이나 보호하고 싶은 대상이 있는지"
+    },
+    {
+      "slug": "cat-lost",
+      "subject": "고양이를 잃어버리는 꿈",
+      "scene_a": "다시 찾아 만났을 때",
+      "scene_b": "끝내 찾지 못했을 때",
+      "reflection": "익숙한 관계나 소중한 물건을 잃을까 걱정했는지"
+    },
+    {
+      "slug": "dog-following",
+      "subject": "개가 따라오는 꿈",
+      "scene_a": "반갑게 함께 걸었을 때",
+      "scene_b": "계속 따라와 부담스러웠을 때",
+      "reflection": "친밀한 동행과 개인 공간 사이에서 고민했는지"
+    },
+    {
+      "slug": "dog-biting",
+      "subject": "개에게 물리는 꿈",
+      "scene_a": "놀랐지만 금방 진정했을 때",
+      "scene_b": "도망쳐도 쫓아왔을 때",
+      "reflection": "믿었던 사람과의 약속이나 갈등이 마음에 남았는지"
+    },
+    {
+      "slug": "dog-rescuing",
+      "subject": "강아지를 구하는 꿈",
+      "scene_a": "안전한 곳으로 데려왔을 때",
+      "scene_b": "구하려다 망설였을 때",
+      "reflection": "누군가를 돕고 싶지만 책임이 부담스러웠는지"
+    },
+    {
+      "slug": "dog-barking",
+      "subject": "개가 크게 짖는 꿈",
+      "scene_a": "경고를 듣고 멈췄을 때",
+      "scene_b": "짖는 소리에 겁을 먹었을 때",
+      "reflection": "주변의 충고를 받아들이는 일이 어려웠는지"
+    },
+    {
+      "slug": "tiger-approaching",
+      "subject": "호랑이가 다가오는 꿈",
+      "scene_a": "눈을 맞추고 서 있었을 때",
+      "scene_b": "등을 돌리고 달아났을 때",
+      "reflection": "강한 인물이나 중요한 기회를 마주했는지"
+    },
+    {
+      "slug": "tiger-cub",
+      "subject": "새끼 호랑이를 보는 꿈",
+      "scene_a": "귀엽게 바라보았을 때",
+      "scene_b": "가까이 갈 수 없었을 때",
+      "reflection": "작지만 성장 가능성이 큰 일을 시작했는지"
+    },
+    {
+      "slug": "lion-roaring",
+      "subject": "사자가 포효하는 꿈",
+      "scene_a": "멀리서 소리를 들었을 때",
+      "scene_b": "바로 앞에서 포효했을 때",
+      "reflection": "권위 있는 사람의 말이나 평가가 압박으로 다가왔는지"
+    },
+    {
+      "slug": "bear-chasing",
+      "subject": "곰에게 쫓기는 꿈",
+      "scene_a": "숨을 곳을 찾았을 때",
+      "scene_b": "길이 막혀 멈췄을 때",
+      "reflection": "크고 해결하기 어려워 보이는 일을 피하고 있었는지"
+    },
+    {
+      "slug": "rabbit-running",
+      "subject": "토끼가 뛰어다니는 꿈",
+      "scene_a": "밝은 풀밭을 뛰었을 때",
+      "scene_b": "갑자기 시야에서 사라졌을 때",
+      "reflection": "빠른 선택과 놓치기 쉬운 기회가 신경 쓰였는지"
+    },
+    {
+      "slug": "horse-riding",
+      "subject": "말을 타고 달리는 꿈",
+      "scene_a": "속도를 스스로 조절했을 때",
+      "scene_b": "말이 말을 듣지 않았을 때",
+      "reflection": "일의 주도권과 진행 속도를 어떻게 느끼는지"
+    },
+    {
+      "slug": "cow-field",
+      "subject": "소가 들판에 있는 꿈",
+      "scene_a": "느긋하게 풀을 뜯었을 때",
+      "scene_b": "소가 울타리를 벗어났을 때",
+      "reflection": "꾸준히 해 온 일과 생활의 안정감을 돌아볼 필요가 있는지"
+    },
+    {
+      "slug": "sheep-herd",
+      "subject": "양 떼가 모여 있는 꿈",
+      "scene_a": "무리가 평온하게 움직였을 때",
+      "scene_b": "떼에서 한 마리만 떨어졌을 때",
+      "reflection": "단체 속 소속감과 혼자만의 선택 사이에 고민이 있는지"
+    },
+    {
+      "slug": "deer-forest",
+      "subject": "사슴을 숲에서 만나는 꿈",
+      "scene_a": "가까이에서 마주 보았을 때",
+      "scene_b": "사슴이 놀라 달아났을 때",
+      "reflection": "조심스러운 호감이나 소중한 기회를 대하는 태도가 어떤지"
+    },
+    {
+      "slug": "fox-talking",
+      "subject": "여우가 나오는 꿈",
+      "scene_a": "여우를 지켜만 보았을 때",
+      "scene_b": "여우에게 속은 느낌이 들었을 때",
+      "reflection": "누군가의 말과 숨은 의도를 과하게 의심하고 있지는 않은지"
+    },
+    {
+      "slug": "wolf-howling",
+      "subject": "늑대 울음소리를 듣는 꿈",
+      "scene_a": "먼 곳에서 울음이 들렸을 때",
+      "scene_b": "늑대 무리가 주변을 에워쌌을 때",
+      "reflection": "고립감과 집단의 압력을 동시에 느끼는 일이 있었는지"
+    },
+    {
+      "slug": "elephant-walking",
+      "subject": "코끼리가 걸어오는 꿈",
+      "scene_a": "천천히 길을 내주었을 때",
+      "scene_b": "거대한 몸집에 놀랐을 때",
+      "reflection": "규모가 큰 과제나 책임을 눈앞에 두고 있는지"
+    },
+    {
+      "slug": "giraffe-looking",
+      "subject": "기린을 보는 꿈",
+      "scene_a": "높은 곳을 바라보았을 때",
+      "scene_b": "기린이 목을 숙여 다가왔을 때",
+      "reflection": "평소보다 먼 목표를 세우거나 관점을 바꿔 보고 싶은지"
+    },
+    {
+      "slug": "monkey-playing",
+      "subject": "원숭이가 장난치는 꿈",
+      "scene_a": "함께 웃으며 놀았을 때",
+      "scene_b": "물건을 빼앗겼을 때",
+      "reflection": "유쾌한 분위기 속에서 집중력이 흐트러진 적이 있는지"
+    },
+    {
+      "slug": "chicken-eggs",
+      "subject": "닭이 알을 품는 꿈",
+      "scene_a": "알이 깨지는 장면을 보았을 때",
+      "scene_b": "알이 없어져 당황했을 때",
+      "reflection": "기다려 온 결과와 준비 과정에 대한 마음이 어떤지"
+    },
+    {
+      "slug": "duck-swimming",
+      "subject": "오리가 헤엄치는 꿈",
+      "scene_a": "물 위를 편안히 떠다녔을 때",
+      "scene_b": "물살 때문에 방향이 바뀌었을 때",
+      "reflection": "겉으로는 차분하지만 속으로는 바쁘게 애쓰고 있는지"
+    },
+    {
+      "slug": "eagle-flying",
+      "subject": "독수리가 높이 나는 꿈",
+      "scene_a": "하늘을 자유롭게 날았을 때",
+      "scene_b": "갑자기 아래로 내려왔을 때",
+      "reflection": "높은 목표와 현실적인 제약을 함께 고려하고 있는지"
+    },
+    {
+      "slug": "owl-night",
+      "subject": "부엉이가 밤에 우는 꿈",
+      "scene_a": "소리가 조용히 들렸을 때",
+      "scene_b": "어둠 속 소리가 무섭게 들렸을 때",
+      "reflection": "불확실한 정보를 확인하고 싶어 하거나 혼자 생각이 많아졌는지"
+    },
+    {
+      "slug": "butterfly-landing",
+      "subject": "나비가 손에 앉는 꿈",
+      "scene_a": "가만히 손 위에 머물렀을 때",
+      "scene_b": "잡으려 하자 날아갔을 때",
+      "reflection": "작은 기쁨을 오래 붙잡고 싶거나 순간을 놓칠까 걱정했는지"
+    },
+    {
+      "slug": "bee-stinging",
+      "subject": "벌에 쏘이는 꿈",
+      "scene_a": "한 번 쏘이고 지나갔을 때",
+      "scene_b": "여러 마리가 몰려왔을 때",
+      "reflection": "사소한 마찰이 쌓여 예민해진 것은 아닌지"
+    },
+    {
+      "slug": "ant-line",
+      "subject": "개미 떼가 줄지어 가는 꿈",
+      "scene_a": "차례대로 움직였을 때",
+      "scene_b": "집 안을 가득 메웠을 때",
+      "reflection": "작은 일들이 쌓여 부담이 되거나 협업의 필요성을 느끼는지"
+    },
+    {
+      "slug": "spider-web",
+      "subject": "거미줄에 걸리는 꿈",
+      "scene_a": "거미줄을 떼어냈을 때",
+      "scene_b": "얽혀 빠져나오기 어려웠을 때",
+      "reflection": "복잡한 약속이나 관계가 자신을 묶는 듯한 느낌이 있는지"
+    }
+  ]
+}
