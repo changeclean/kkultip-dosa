@@ -1,0 +1,188 @@
+{
+  "category": "자연·날씨·재난 꿈",
+  "emoji": "🌦️",
+  "entries": [
+    {
+      "slug": "ocean-calm",
+      "subject": "잔잔한 바다를 보는 꿈",
+      "scene_a": "수평선을 편안히 바라봤을 때",
+      "scene_b": "바다가 너무 넓게 느껴졌을 때",
+      "reflection": "마음의 여유와 앞으로의 불확실성을 함께 생각하는지"
+    },
+    {
+      "slug": "ocean-waves",
+      "subject": "큰 파도가 밀려오는 꿈",
+      "scene_a": "파도가 지나가기를 기다렸을 때",
+      "scene_b": "휩쓸릴까 두려웠을 때",
+      "reflection": "감당하기 어려워 보이는 변화가 다가오고 있는지"
+    },
+    {
+      "slug": "rain-falling",
+      "subject": "비가 내리는 꿈",
+      "scene_a": "비를 맞으며 걸었을 때",
+      "scene_b": "폭우에 길이 막혔을 때",
+      "reflection": "답답한 감정을 씻어내거나 계획에 방해를 받는지"
+    },
+    {
+      "slug": "umbrella-losing",
+      "subject": "비 오는 날 우산을 잃는 꿈",
+      "scene_a": "잠시 비를 피했을 때",
+      "scene_b": "비를 계속 맞아야 했을 때",
+      "reflection": "준비가 부족하다고 느끼는 일이 있는지"
+    },
+    {
+      "slug": "snow-falling",
+      "subject": "눈이 내리는 꿈",
+      "scene_a": "조용히 쌓이는 눈을 봤을 때",
+      "scene_b": "눈 때문에 움직일 수 없었을 때",
+      "reflection": "고요한 시간을 원하거나 일이 잠시 멈췄는지"
+    },
+    {
+      "slug": "snowman-making",
+      "subject": "눈사람을 만드는 꿈",
+      "scene_a": "모양이 완성됐을 때",
+      "scene_b": "금방 녹아버렸을 때",
+      "reflection": "잠깐의 즐거움이나 추억을 오래 간직하고 싶은지"
+    },
+    {
+      "slug": "thunder-lightning",
+      "subject": "천둥번개가 치는 꿈",
+      "scene_a": "실내에서 안전하게 봤을 때",
+      "scene_b": "바로 가까이에서 번개가 쳤을 때",
+      "reflection": "갑작스러운 소식이나 갈등을 예상하고 있는지"
+    },
+    {
+      "slug": "storm-wind",
+      "subject": "거센 바람이 부는 꿈",
+      "scene_a": "바람을 맞으며 버텼을 때",
+      "scene_b": "물건이 날아갔을 때",
+      "reflection": "외부 환경 때문에 계획이 흔들리는 느낌이 있는지"
+    },
+    {
+      "slug": "tornado-near",
+      "subject": "회오리바람이 다가오는 꿈",
+      "scene_a": "안전한 곳으로 피했을 때",
+      "scene_b": "주변이 휘말렸을 때",
+      "reflection": "통제하기 어려운 사건에 대한 두려움이 있는지"
+    },
+    {
+      "slug": "earthquake-shaking",
+      "subject": "지진으로 땅이 흔들리는 꿈",
+      "scene_a": "건물 밖으로 나왔을 때",
+      "scene_b": "서 있기도 어려웠을 때",
+      "reflection": "당연하던 기반이 바뀌는 상황을 마주하는지"
+    },
+    {
+      "slug": "mountain-climbing",
+      "subject": "산 정상에 오르는 꿈",
+      "scene_a": "풍경을 즐겼을 때",
+      "scene_b": "정상이 너무 멀어 보였을 때",
+      "reflection": "높은 목표를 향한 꾸준한 노력에 피로가 있는지"
+    },
+    {
+      "slug": "mountain-falling",
+      "subject": "산에서 미끄러지는 꿈",
+      "scene_a": "나무를 붙잡았을 때",
+      "scene_b": "빠르게 아래로 내려갔을 때",
+      "reflection": "성과를 지키지 못할까 걱정하는지"
+    },
+    {
+      "slug": "forest-walking",
+      "subject": "숲길을 걷는 꿈",
+      "scene_a": "빛이 드는 길을 발견했을 때",
+      "scene_b": "길을 잃었을 때",
+      "reflection": "혼자 생각을 정리할 시간이 필요한지"
+    },
+    {
+      "slug": "desert-crossing",
+      "subject": "사막을 걷는 꿈",
+      "scene_a": "오아시스를 발견했을 때",
+      "scene_b": "끝이 보이지 않았을 때",
+      "reflection": "자원이 부족한 가운데 오래 버티고 있는지"
+    },
+    {
+      "slug": "river-crossing",
+      "subject": "강을 건너는 꿈",
+      "scene_a": "반대편에 무사히 도착했을 때",
+      "scene_b": "물살이 빨라 멈췄을 때",
+      "reflection": "중요한 변화를 통과하고 있는지"
+    },
+    {
+      "slug": "waterfall-view",
+      "subject": "폭포를 바라보는 꿈",
+      "scene_a": "물소리가 시원하게 들렸을 때",
+      "scene_b": "가까이 가기 무서웠을 때",
+      "reflection": "강렬한 감정을 어떻게 받아들이는지"
+    },
+    {
+      "slug": "lake-reflection",
+      "subject": "호수에 비친 모습을 보는 꿈",
+      "scene_a": "물결이 잔잔했을 때",
+      "scene_b": "바람으로 모습이 흐려졌을 때",
+      "reflection": "차분한 자기 성찰과 불안정한 상황이 교차하는지"
+    },
+    {
+      "slug": "sunrise-view",
+      "subject": "해돋이를 보는 꿈",
+      "scene_a": "밝아지는 하늘을 봤을 때",
+      "scene_b": "구름에 해가 가렸을 때",
+      "reflection": "새 출발에 대한 기대가 있는지"
+    },
+    {
+      "slug": "sunset-view",
+      "subject": "노을을 보는 꿈",
+      "scene_a": "따뜻하게 느껴졌을 때",
+      "scene_b": "해가 지며 쓸쓸했을 때",
+      "reflection": "하루나 한 시기의 끝을 받아들이려는지"
+    },
+    {
+      "slug": "moon-big",
+      "subject": "커다란 달을 보는 꿈",
+      "scene_a": "밝고 아름다웠을 때",
+      "scene_b": "달빛이 낯설었을 때",
+      "reflection": "마음속 소망과 현실의 거리를 살피는지"
+    },
+    {
+      "slug": "stars-falling",
+      "subject": "별똥별을 보는 꿈",
+      "scene_a": "소원을 떠올렸을 때",
+      "scene_b": "너무 빨리 사라졌을 때",
+      "reflection": "짧은 기회를 놓치기 싫어하는지"
+    },
+    {
+      "slug": "rainbow-appearing",
+      "subject": "무지개를 보는 꿈",
+      "scene_a": "선명한 색을 봤을 때",
+      "scene_b": "가까이 가니 사라졌을 때",
+      "reflection": "어려운 일이 지나간 뒤 생기는 안도감을 기대하는지"
+    },
+    {
+      "slug": "flower-blooming",
+      "subject": "꽃이 피는 꿈",
+      "scene_a": "꽃이 활짝 피었을 때",
+      "scene_b": "금세 시들었을 때",
+      "reflection": "관계나 계획이 성장하는 속도에 민감한지"
+    },
+    {
+      "slug": "tree-growing",
+      "subject": "나무가 자라는 꿈",
+      "scene_a": "잎이 무성해졌을 때",
+      "scene_b": "가지가 꺾였을 때",
+      "reflection": "오랜 노력이 눈에 보이는 성과로 이어지길 바라는지"
+    },
+    {
+      "slug": "fire-extinguishing",
+      "subject": "불을 끄는 꿈",
+      "scene_a": "작은 불을 진압했을 때",
+      "scene_b": "불길이 다시 번졌을 때",
+      "reflection": "문제를 제때 해결하려는 책임감이 있는지"
+    },
+    {
+      "slug": "volcano-erupting",
+      "subject": "화산이 폭발하는 꿈",
+      "scene_a": "멀리서 지켜봤을 때",
+      "scene_b": "용암이 가까워졌을 때",
+      "reflection": "참아 두었던 분노나 긴장이 한꺼번에 터질까 걱정하는지"
+    }
+  ]
+}
