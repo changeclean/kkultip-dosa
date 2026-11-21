@@ -1,0 +1,202 @@
+{
+  "category": "집·건물·장소 꿈",
+  "emoji": "🏠",
+  "entries": [
+    {
+      "slug": "house-burning",
+      "subject": "집에 불이 나는 꿈",
+      "scene_a": "밖으로 안전하게 나왔을 때",
+      "scene_b": "물건을 챙기지 못했을 때",
+      "reflection": "일상의 급격한 변화나 안전에 대한 걱정이 있는지"
+    },
+    {
+      "slug": "house-flooding",
+      "subject": "집에 물이 차는 꿈",
+      "scene_a": "물을 빼낼 수 있었을 때",
+      "scene_b": "점점 차올랐을 때",
+      "reflection": "감정이나 일이 생활 공간까지 밀려드는 듯한지"
+    },
+    {
+      "slug": "roof-leaking",
+      "subject": "천장에서 비가 새는 꿈",
+      "scene_a": "새는 곳을 발견했을 때",
+      "scene_b": "여러 군데에서 비가 샜을 때",
+      "reflection": "작은 문제가 커지기 전에 손보고 싶은 마음이 있는지"
+    },
+    {
+      "slug": "door-locked",
+      "subject": "문이 잠겨 들어가지 못하는 꿈",
+      "scene_a": "열쇠를 찾아 문을 열었을 때",
+      "scene_b": "문 앞에서 계속 기다렸을 때",
+      "reflection": "진입 장벽이나 거절을 체감하는 일이 있는지"
+    },
+    {
+      "slug": "window-opening",
+      "subject": "창문을 여는 꿈",
+      "scene_a": "맑은 바람이 들어왔을 때",
+      "scene_b": "창문이 잘 열리지 않았을 때",
+      "reflection": "새로운 시각이나 답답한 상황의 출구를 찾는지"
+    },
+    {
+      "slug": "stairs-climbing",
+      "subject": "계단을 올라가는 꿈",
+      "scene_a": "천천히 정상에 올랐을 때",
+      "scene_b": "계단이 끝없이 이어졌을 때",
+      "reflection": "목표에 도달하려는 노력과 피로가 동시에 있는지"
+    },
+    {
+      "slug": "stairs-falling",
+      "subject": "계단에서 넘어지는 꿈",
+      "scene_a": "난간을 잡고 멈췄을 때",
+      "scene_b": "계속 아래로 굴러떨어졌을 때",
+      "reflection": "진행 중인 일의 실수나 속도가 걱정되는지"
+    },
+    {
+      "slug": "elevator-rising",
+      "subject": "엘리베이터를 타고 올라가는 꿈",
+      "scene_a": "원하는 층에 도착했을 때",
+      "scene_b": "층수를 알 수 없었을 때",
+      "reflection": "빠른 변화 속에서 방향을 통제하고 싶은지"
+    },
+    {
+      "slug": "elevator-stuck",
+      "subject": "엘리베이터에 갇히는 꿈",
+      "scene_a": "도움을 요청할 수 있었을 때",
+      "scene_b": "전화도 연결되지 않았을 때",
+      "reflection": "선택지가 좁아졌다고 느끼는 상황이 있는지"
+    },
+    {
+      "slug": "bathroom-dirty",
+      "subject": "더러운 화장실을 보는 꿈",
+      "scene_a": "다른 화장실을 찾았을 때",
+      "scene_b": "어쩔 수 없이 들어갔을 때",
+      "reflection": "사적인 불편이나 해결하지 못한 일이 있는지"
+    },
+    {
+      "slug": "bathroom-finding",
+      "subject": "화장실을 찾는 꿈",
+      "scene_a": "마침내 발견했을 때",
+      "scene_b": "문마다 사람이 있었을 때",
+      "reflection": "쉬거나 감정을 해소할 공간이 부족하다고 느끼는지"
+    },
+    {
+      "slug": "kitchen-cooking",
+      "subject": "주방에서 요리하는 꿈",
+      "scene_a": "음식이 잘 완성됐을 때",
+      "scene_b": "재료를 찾지 못했을 때",
+      "reflection": "돌봄과 준비가 필요한 생활 과제를 떠올리는지"
+    },
+    {
+      "slug": "bedroom-dark",
+      "subject": "침실이 어두워지는 꿈",
+      "scene_a": "불을 켤 수 있었을 때",
+      "scene_b": "스위치가 작동하지 않았을 때",
+      "reflection": "휴식 공간에서조차 걱정을 놓지 못하는지"
+    },
+    {
+      "slug": "basement-entering",
+      "subject": "지하실에 내려가는 꿈",
+      "scene_a": "익숙한 물건을 발견했을 때",
+      "scene_b": "출구를 찾지 못했을 때",
+      "reflection": "잊고 있던 기억이나 미뤄둔 일을 돌아볼 필요가 있는지"
+    },
+    {
+      "slug": "attic-discovery",
+      "subject": "다락방을 발견하는 꿈",
+      "scene_a": "오래된 물건을 꺼냈을 때",
+      "scene_b": "안으로 들어가기 망설였을 때",
+      "reflection": "과거의 추억이나 잠재된 관심사가 떠오르는지"
+    },
+    {
+      "slug": "apartment-high",
+      "subject": "높은 아파트에 서 있는 꿈",
+      "scene_a": "전망을 즐겼을 때",
+      "scene_b": "아래를 내려다보며 무서웠을 때",
+      "reflection": "성취에 대한 기대와 높은 위치의 책임을 느끼는지"
+    },
+    {
+      "slug": "school-return",
+      "subject": "졸업한 학교에 돌아가는 꿈",
+      "scene_a": "익숙한 교실을 찾았을 때",
+      "scene_b": "자기 반이 없어졌을 때",
+      "reflection": "과거의 평가 기준을 현재에도 적용하는지"
+    },
+    {
+      "slug": "hospital-waiting",
+      "subject": "병원에서 기다리는 꿈",
+      "scene_a": "차례가 다가왔을 때",
+      "scene_b": "계속 이름이 불리지 않았을 때",
+      "reflection": "확인이나 돌봄이 필요한 상황을 미루고 있는지"
+    },
+    {
+      "slug": "hotel-lost",
+      "subject": "호텔에서 길을 잃는 꿈",
+      "scene_a": "방 번호를 찾았을 때",
+      "scene_b": "복도가 계속 이어졌을 때",
+      "reflection": "낯선 환경에서 규칙을 알아야 한다는 부담이 있는지"
+    },
+    {
+      "slug": "market-shopping",
+      "subject": "시장에 가는 꿈",
+      "scene_a": "필요한 물건을 골랐을 때",
+      "scene_b": "사람이 많아 구매하지 못했을 때",
+      "reflection": "선택지가 많을수록 결정을 어려워하는지"
+    },
+    {
+      "slug": "mall-wandering",
+      "subject": "쇼핑몰을 헤매는 꿈",
+      "scene_a": "원하던 가게를 찾았을 때",
+      "scene_b": "출구를 못 찾았을 때",
+      "reflection": "유혹과 선택 사이에서 우선순위를 정해야 하는지"
+    },
+    {
+      "slug": "library-books",
+      "subject": "도서관에서 책을 찾는 꿈",
+      "scene_a": "원하는 책을 발견했을 때",
+      "scene_b": "책장이 너무 많았을 때",
+      "reflection": "답을 찾아 공부하거나 조사하는 일이 있는지"
+    },
+    {
+      "slug": "temple-visiting",
+      "subject": "절에 방문하는 꿈",
+      "scene_a": "조용히 머물렀을 때",
+      "scene_b": "길을 잘못 들어 당황했을 때",
+      "reflection": "마음을 가라앉히고 싶은 필요를 느끼는지"
+    },
+    {
+      "slug": "church-bells",
+      "subject": "교회 종소리를 듣는 꿈",
+      "scene_a": "평온하게 들렸을 때",
+      "scene_b": "낯설게 울려 긴장했을 때",
+      "reflection": "삶의 기준이나 공동체와의 관계를 돌아보는지"
+    },
+    {
+      "slug": "grave-visiting",
+      "subject": "묘지를 방문하는 꿈",
+      "scene_a": "차분히 인사했을 때",
+      "scene_b": "무덤을 찾지 못했을 때",
+      "reflection": "그리움이나 지나간 일을 정리하려는 마음이 있는지"
+    },
+    {
+      "slug": "bridge-crossing",
+      "subject": "다리를 건너는 꿈",
+      "scene_a": "건너편에 도착했을 때",
+      "scene_b": "중간에서 발길을 멈췄을 때",
+      "reflection": "변화의 중간 단계에서 다음 선택을 고민하는지"
+    },
+    {
+      "slug": "tunnel-passing",
+      "subject": "터널을 지나는 꿈",
+      "scene_a": "끝에 빛이 보였을 때",
+      "scene_b": "출구가 보이지 않았을 때",
+      "reflection": "끝이 보이지 않는 과제를 견디고 있는지"
+    },
+    {
+      "slug": "maze-escaping",
+      "subject": "미로를 탈출하는 꿈",
+      "scene_a": "표시를 따라 나왔을 때",
+      "scene_b": "제자리로 돌아왔을 때",
+      "reflection": "여러 해결책을 시도하지만 결론이 나지 않은 일이 있는지"
+    }
+  ]
+}
