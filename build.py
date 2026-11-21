@@ -89,7 +89,7 @@ def shell(title, desc, main, active='', path='', kind='website', data=None):
  if canon: ld['url']=canon
  if data: ld.update(data)
  schema=json.dumps(ld,ensure_ascii=False).replace('<','\\u003c')
- return f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff8e9"><title>{esc(tag_title)}</title><meta name="description" content="{esc(desc)}">{canonical}<meta property="og:type" content="{'article' if kind=='article' else 'website'}"><meta property="og:site_name" content="꿀팁도사"><meta property="og:title" content="{esc(tag_title)}"><meta property="og:description" content="{esc(desc)}">{ogurl}<link rel="icon" type="image/png" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><meta property="og:image" content="{SITE_URL + '/assets/mascot-logo.webp' if SITE_URL else '/assets/mascot-logo.webp'}"><link rel="stylesheet" href="/assets/style.css"><script type="application/ld+json">{schema}</script></head><body>{nav(active)}<main id="main">{main}</main>{footer()}<script src="/assets/app.js" defer></script></body></html>'''
+ return f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff8e9"><title>{esc(tag_title)}</title><meta name="description" content="{esc(desc)}">{canonical}<meta property="og:type" content="{'article' if kind=='article' else 'website'}"><meta property="og:site_name" content="꿀팁도사"><meta property="og:title" content="{esc(tag_title)}"><meta property="og:description" content="{esc(desc)}">{ogurl}<link rel="icon" type="image/png" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><meta property="og:image" content="{SITE_URL + '/assets/mascot-logo.webp' if SITE_URL else '/assets/mascot-logo.webp'}"><link rel="stylesheet" href="/assets/style.css?v=20261121-banners"><script type="application/ld+json">{schema}</script></head><body>{nav(active)}<main id="main">{main}</main>{footer()}<script src="/assets/app.js" defer></script></body></html>'''
 
 def write(path,content):
  p=OUT/path
@@ -99,8 +99,8 @@ def write(path,content):
 def promo_ads():
  """Two portrait banners. No cropping; one-column mobile, two-column desktop."""
  items=[
-  ('체인지클린','/assets/ad-change-clean-mobile.webp','https://myhomecare.imweb.me/','체인지클린 입주·이사·거주청소 모바일 광고'),
-  ('리치에너지','/assets/ad-rich-energy-mobile.webp','https://exquisite-pasca-122e6a.netlify.app/','리치에너지 도시가스 시공 모바일 광고')
+  ('체인지클린','/assets/ad-change-clean-mobile.webp?v=ba597c0','https://myhomecare.imweb.me/','체인지클린 입주·이사·거주청소 모바일 광고'),
+  ('리치에너지','/assets/ad-rich-energy-mobile.webp?v=9e36a1b','https://exquisite-pasca-122e6a.netlify.app/','리치에너지 도시가스 시공 모바일 광고')
  ]
  cards=[]
  for title,img,url,alt in items:
